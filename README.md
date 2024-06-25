@@ -107,6 +107,6 @@ We welcome contributions! If you’d like to contribute, please follow these ste
 6. Create a new Pull Request.
 
 ## Author
-Christos Lathourakis<br>
-Machine Learning Engineer @TNO<br>
+Christos Lathourakis <br>
+Machine Learning Engineer @TNO <br>
 You can contact me at `xristosl0610@gmail.com` for any queries or further information.
