@@ -48,6 +48,9 @@ def quiz(vocab_list: List[Dict[str, str]], num_words: int = 10, direction: str =
     """
     selected_words: List[Dict[str, str]] = random.sample(vocab_list, num_words)
 
+    direction_title: str = format_direction_title(direction)
+    print(f"\n*** {direction_title} Quiz ***\n")
+
     for word in selected_words:
         if direction == 'nl_en':
             prompt_word: str = word['Dutch']
@@ -59,9 +62,8 @@ def quiz(vocab_list: List[Dict[str, str]], num_words: int = 10, direction: str =
             raise ValueError(f"Unknown quiz direction: {direction}")
 
         additional_info: str = word['Additional Info']
-        direction_title: str = format_direction_title(direction)
 
-        print(f"\n{direction_title} word: {prompt_word}")
+        print(f"\n{direction_title.split(' ')[0]} word: {prompt_word}")
         input("Your translation: ")
 
         print(f"\nCorrect translation: {correct_translation}")
