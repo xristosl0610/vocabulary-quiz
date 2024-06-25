@@ -1,6 +1,9 @@
 import csv
 import random
 from typing import List, Dict
+import shutil
+
+TERMINAL_WIDTH: int = shutil.get_terminal_size().columns
 
 
 def read_csv(file_path: str) -> List[Dict[str, str]]:
@@ -37,6 +40,21 @@ def format_direction_title(direction: str) -> str:
         raise ValueError(f"Unknown quiz direction: {direction}")
 
 
+def calculate_padding(text: str) -> str:
+    """
+    Calculate padding to center text based on terminal width.
+
+    Args:
+        text (str): The text to center.
+
+    Returns:
+        str: Padding spaces to center the text.
+    """
+    text_length: int = len(text)
+    padding_length: int = max(0, (TERMINAL_WIDTH - text_length) // 2)
+    return " " * padding_length
+
+
 def quiz(vocab_list: List[Dict[str, str]], num_words: int = 10, direction: str = 'nl_en') -> None:
     """
     Runs a quiz by selecting a specified number of random words from the vocabulary list.
@@ -47,9 +65,11 @@ def quiz(vocab_list: List[Dict[str, str]], num_words: int = 10, direction: str =
         direction (str, optional): The direction of the quiz, 'nl_en' or 'en_nl'. Defaults to 'nl_en'.
     """
     selected_words: List[Dict[str, str]] = random.sample(vocab_list, num_words)
-
     direction_title: str = format_direction_title(direction)
-    print(f"\n*** {direction_title} Quiz ***\n")
+
+    centered_title: str = f"*** {direction_title} Quiz ***"
+    padding: str = calculate_padding(centered_title)
+    print(f"\n{padding}{centered_title}\n")
 
     for word in selected_words:
         if direction == 'nl_en':
@@ -63,14 +83,17 @@ def quiz(vocab_list: List[Dict[str, str]], num_words: int = 10, direction: str =
 
         additional_info: str = word['Additional Info']
 
-        print(f"\n{direction_title.split(' ')[0]} word: {prompt_word}")
-        input("Your translation: ")
+        temp_padding: str = calculate_padding(f"{direction_title.split(' ')[0]} word: {prompt_word}")
+        print(f"\n{temp_padding}{direction_title.split(' ')[0]} word: {prompt_word}")
+        input(f"{temp_padding}Your translation: ")
 
-        print(f"\nCorrect translation: {correct_translation}")
-        print(f"Additional info: {additional_info}\n")
+        temp_padding: str = calculate_padding(f"Correct translation: {correct_translation}")
+        print(f"\n{temp_padding}Correct translation: {correct_translation}")
+        print(f"{temp_padding}Additional info: {additional_info}\n")
 
-        response: str = input("Press Enter for the next word or 'q' to exit...")
+        temp_padding: str = calculate_padding("Press Enter for the next word or 'q' to exit...")
+        response: str = input(f"{temp_padding}Press Enter for the next word or 'q' to exit...")
 
         if response.lower() == "q":
-            print("Exiting the quiz...")
+            print(f"{padding}Exiting the quiz...")
             return
