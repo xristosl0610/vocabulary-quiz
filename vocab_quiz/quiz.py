@@ -80,23 +80,22 @@ def quiz(vocab_df: pd.DataFrame, num_words: int = 10, direction: str = 'nl_en') 
     direction_title: str = format_direction_title(direction)
     print(f"\n*** {direction_title} Quiz ***\n")
 
-    for index, word in selected_words.iterrows():
-        if direction == 'nl_en':
-            prompt_word = word['Dutch']
-            correct_translation = word['English']
-        elif direction == 'en_nl':
-            prompt_word = word['English']
-            correct_translation = word['Dutch']
-        else:
+    match direction:
+        case 'nl_en':
+            prompt_col: str = 'Dutch'
+            translation_col: str = 'English'
+        case 'en_nl':
+            prompt_col: str = 'English'
+            translation_col: str = 'Dutch'
+        case _:
             raise ValueError(f"Unknown quiz direction: {direction}")
 
-        additional_info: str = word['Additional Info']
-
-        print(f"\n{direction_title.split(' ')[0]} word: {prompt_word}")
+    for index, word in selected_words.iterrows():
+        print(f"\n{direction_title.split(' ')[0]} word: {word[prompt_col]}")
         input("Your translation: ")
 
-        print(f"\nCorrect translation: {correct_translation}")
-        print(f"Additional info: {additional_info}\n")
+        print(f"\nCorrect translation: {word[translation_col]}")
+        print(f"Additional info: {word['Additional Info']}\n")
 
         while True:
             correct = input("Was your answer correct? (y/n): ").strip().lower()
