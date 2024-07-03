@@ -9,7 +9,8 @@ def main() -> None:
     parser: ArgumentParser = ArgumentParser(description="Vocabulary Quiz")
     parser.add_argument("csv_file", help="Path to the CSV file containing vocabulary")
     parser.add_argument("--num_words", type=int, default=10, help="Number of words in the quiz")
-    parser.add_argument("--direction", choices=['nl_en', 'en_nl'], default='nl_en', help="Direction of the quiz")
+    parser.add_argument("--direction", type=str, choices=['nl_en', 'en_nl'],
+                        default='nl_en', help="Direction of the quiz")
 
     args: Namespace = parser.parse_args()
 
