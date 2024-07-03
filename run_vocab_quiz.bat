@@ -1,2 +1,6 @@
 @echo off
-cmd /c ".\.venv\Scripts\python.exe -m vocab_quiz.cli data\Dutch_Vocabulary.csv --num_words 20 --direction nl_en && .\.venv\Scripts\python.exe -m vocab_quiz.cli data\Dutch_Vocabulary.csv --num_words 20 --direction en_nl"
+REM Change directory to the directory of the batch file
+cd /d "C:\Users\lathourakisc\Projects\Dutch\vocabulary_quiz"
+
+REM Run Python scripts using relative paths
+cmd /c ".\.venv\Scripts\python.exe -m vocab_quiz.cli data\Dutch_Vocabulary.csv --num_words 50 --direction nl_en && .\.venv\Scripts\python.exe -m vocab_quiz.cli data\Dutch_Vocabulary.csv --num_words 50 --direction en_nl"
