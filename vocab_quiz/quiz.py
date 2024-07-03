@@ -29,12 +29,13 @@ def format_direction_title(direction: str) -> str:
     Returns:
         str: The formatted direction title.
     """
-    if direction == 'nl_en':
-        return 'Dutch to English'
-    elif direction == 'en_nl':
-        return 'English to Dutch'
-    else:
-        raise ValueError(f"Unknown quiz direction: {direction}")
+    match direction:
+        case 'nl_en':
+            return 'Dutch to English'
+        case 'en_nl':
+            return 'English to Dutch'
+        case _:
+            raise ValueError(f"Unknown quiz direction: {direction}")
 
 
 def quiz(vocab_list: List[Dict[str, str]], num_words: int = 10, direction: str = 'nl_en') -> None:
