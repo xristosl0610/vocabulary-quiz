@@ -32,7 +32,7 @@ de boom,tree,de bomen,0,0
 de boot,boat,de boten,0,0
 de boot vaart op het water,the boat sails on the water,,1,0
 varen,"travel, sail (always on the water)",ik vaar,0,0
-ijs,ice,,0,0
+ijs,ice,,0,1
 het ijsje,ice cream,,1,0
 ik ben negenentwintig jar oud,I am 29 years old,,0,0
 nieuw,new,nieuwe schoenen,1,0
@@ -69,7 +69,7 @@ hij heeft pijn aan zijn arm,he has pain at his arm,,0,1
 de pijn,pain,,0,0
 de hoofdpijn,headache,,0,0
 de griep,flu,ik heb griep,0,0
-de koorts,fever,ik heb koorts,0,0
+de koorts,fever,ik heb koorts,1,0
 wij hebben vaak ruzie,we often argue,,0,0
 jij hebt geluk!,you're lucky,,0,0
 de zus,sister,"het zusje, pl. zussen",0,0
@@ -93,21 +93,21 @@ kamperen,camp,,0,0
 leeg,empty,,0,0
 vol,full,,0,0
 vaak,often,,1,0
-het gebied,region,,0,0
+het gebied,region,,0,1
 het strand,beach,,0,0
 groeien,grow,je bent gegroeit,0,0
 de doop,baptism,,0,0
 Pasen,Easter,,0,0
 genieten van,enjoy,,0,0
-ontspannen weekend,relaxed weekend,,0,0
-daarna ben ik terug gekomen,then I came back,,0,0
+ontspannen weekend,relaxed weekend,,1,0
+daarna ben ik terug gekomen,then I came back,,1,1
 ik ben op het strand geweest,I was at the beach,,0,0
 verschilende,various,,0,0
 we gaan naar de kroeg,we go to various pubs,,0,0
 indrukwekkend,impressive,,0,0
 oostelijk,eastern,,0,0
 het weer,weather,,0,0
-kaal,bald,,0,0
+kaal,bald,,1,0
 de herinnering,memory,,0,0
 wat doe je in je vrij tijd,what do you do in your free time,,0,0
 de boer,farmer,,0,0
@@ -116,7 +116,7 @@ de oorbel,earring,,0,0
 vallen,fall,ik val,0,0
 de put,well,,0,0
 we stoppen even,we stop for a little while,,0,0
-komen op bezoek,pay a visit,,0,0
+komen op bezoek,pay a visit,,0,1
 de bril,glasses,,0,0
 ermitzien,to look / the way you look,,0,0
 de afdeling,department,,0,1
@@ -134,7 +134,7 @@ allemaal,everyone,,0,0
 de cursus,course,,0,0
 andere,other,,0,0
 lesgeven,teach,ik geef les,0,0
-de dag,day,,0,0
+de dag,day,,1,0
 beginnen,begin,begon/begonnen - begonnen,0,0
 kennismaken,get to know,,0,0
 wie,who,,0,0
@@ -161,7 +161,7 @@ stoppen,stop,,0,0
 de pauze,break,,0,0
 de tekst,text,,0,0
 even,for a moment,,0,0
-kun je dat spellen?,can you spell that?,,0,0
+kun je dat spellen?,can you spell that?,,1,1
 hoe spel je dat?,how do you spell that?,,0,0
 zitten,sit,,0,1
 deze,this ,,0,1
@@ -175,19 +175,19 @@ ik ben jarig,it's my birthday,,0,0
 dus,therefore,,1,0
 krijgen,"get, receive",,0,0
 nog,any,,0,0
-het bezoek,visit,,0,0
+het bezoek,visit,,1,0
 de broer,brother,,0,0
 wel,certainly,,0,0
 lang,tall,,0,0
 nog meer,anymore,,0,0
-kijken,look,kijken naar,0,0
+kijken,look,kijken naar,0,1
 het haar,hair,,0,0
 heel,very,,0,0
 donker,dark,,0,1
 op dit moment,at this time,,0,0
-doen,do ,,0,0
+doen,do ,,1,0
 daar,there,,0,0
-op vakantie,on vacation,,0,0
+op vakantie,on vacation,,1,0
 het seizoen,season,,0,0
 het werk,work,,0,0
 wanneer,when,,0,0
@@ -222,7 +222,7 @@ vrijdag,Friday,,1,0
 zaterdag,Saturday,,0,0
 zondag,Sunday,,0,0
 samen,together,,0,0
-prettig met je kennis te maken,nice to meet you,,0,0
+prettig met je kennis te maken,nice to meet you,,1,0
 kennen,know (people),,0,0
 ik wil graag cola,I would like a cola,,0,0
 nemen,take,ik neem,0,1
@@ -235,10 +235,10 @@ nog een keer,once more,,0,0
 betalen,pay ,ik betaal,1,0
 afrekenen,pay the bill,,0,0
 ik roep de ober om te bestellen,I call the waiter to order,,0,0
-we willen een tweede rondje bestellen,we want to order a second round,,0,0
+we willen een tweede rondje bestellen,we want to order a second round,,1,0
 mag ik afrekenen?,may I pay?,,0,0
 moe,tired,,0,0
-zwaar,heavy,een zwaar weekend,0,0
+zwaar,heavy,een zwaar weekend,1,0
 het meer,lake,,0,0
 muziek spelen,play music,,0,0
 de muziek,music,,0,0
@@ -285,12 +285,12 @@ de datum,date,,0,0
 dat lukt niet,that doesn't work,,0,0
 dan,then,,0,1
 blijf je ook eten?,will you stay also to eat?,,0,0
-de agenda,agenda,,0,0
+de agenda,agenda,,0,1
 hartstikke leuk,"terrific, fantastic",,0,0
 vind ik ook,I think so too,,0,0
 gauw,quickly,,0,1
 wensen,wish,,0,0
-ik moet ervandoor,Ihave to go,,0,0
+ik moet ervandoor,Ihave to go,,1,0
 ervandoor gaan,"leave, go away",,1,0
 ervandoor ,away,,0,0
 doe de groeten aan,give my regards to ,,0,0
@@ -303,7 +303,7 @@ beantwoorden,reply (v),,0,1
 spoedig,quick,snel,0,0
 aanbieden,"offer, present",bood/boden aan - aangeboden,0,0
 aandoen,"turn on (the light), put on (clothes)",deed/deden aan - aangedaan,0,0
-aankijken,look at (a person),keek/keken aan - aangekeken,0,1
+aankijken,look at (a person),keek/keken aan - aangekeken,1,1
 opkijken,look up,keek/keken op - opgekeken,0,0
 aankomen,arrive,kwam/kwamen aan - aangekomen,0,0
 aannemen,"assume, suppose",nam/namen aan - aangenomen,0,0
@@ -313,8 +313,8 @@ aanvragen,request,vroeg/vroegen aan - aangevraagd,0,0
 aanwijzen,"indicate, point at",wees/wezen aan - aangewezen,0,0
 aanzien,take some time to look at,zag/zagen aan - aangezien,0,0
 begrijpen,understand,begreep/begrepen - begrepen,0,0
-het varken,pig,,0,0
-de paraplu,umbella,pl. paraplu's,0,0
+het varken,pig,,1,0
+de paraplu,umbella,pl. paraplu's,1,0
 let op,beware of,,0,0
 als haringen in een ton zitten,packed like sardines,,0,0
 de ton,barrel,,1,0
@@ -323,7 +323,7 @@ de duim,thumb,pl. de duimen,0,0
 de nagel,nail,pl. de nagels,0,0
 de regel,rule,pl. de regels,0,1
 de appel,apple,pl. de appels,0,0
-de toren,tower,pl. de torens,0,0
+de toren,tower,pl. de torens,1,0
 het bord,"plate, traffic sign",,0,1
 de schepen varen op de zee,the ships sail on the sea,,0,1
 de verkoper,salesman,,0,0
@@ -336,8 +336,8 @@ op straat,on the street,,0,0
 de klant,client,,0,0
 op tafel,on the table,,0,0
 de vergadering,meeting,,0,0
-de baas,boss,,0,0
-voorlezen,read out loud,,0,0
+de baas,boss,,1,0
+voorlezen,read out loud,,1,0
 sinds vier jaar,since four years,,0,1
 de golf,wave,pl. de golven,0,0
 intussen,in the meantime,alvast,0,0
@@ -347,9 +347,9 @@ de groenteboer,greengrocer,,0,0
 er,there,,0,0
 wie is er aan de beurt?,who's next?,,0,0
 de beurt,turn,,0,0
-alsjeblieft,please,,0,0
+alsjeblieft,please,,0,1
 klein,small,kleiner = smaller - kleinste = smallest,0,0
-geel,yellow,,0,0
+geel,yellow,,0,1
 de courgette,courgette,,0,0
 de paprika,bell pepper,,1,0
 mooi,nice,,0,0
@@ -362,7 +362,7 @@ de buitenlander,foreigner,,1,0
 de andijvie,endive,,0,0
 heerlijk,delicious,,0,0
 goedkoop,cheap,,0,0
-hoeveel,how much,,0,0
+hoeveel,how much,,0,1
 nodig hebben,need,ik heb een tomaat nodig,0,0
 de persoon,person,,0,0
 ongeveer,"about, around",,0,0
@@ -374,7 +374,7 @@ het bosje,bunch,,0,0
 het boontje,bean,,0,0
 vers,fresh,,1,0
 de knoflook,garlic,,0,0
-de komkommer,cucumber,,0,0
+de komkommer,cucumber,,1,0
 genoeg,enough,,0,0
 waarnaaroe,where to,,0,0
 de euro,euro,,0,0
@@ -384,25 +384,25 @@ prettig,nice,,0,0
 het weekend,weekend,,0,0
 de sla ,lettuce,,0,0
 de broccoli,broccoli,,0,0
-de kool,cabbage,,1,0
+de kool,cabbage,,1,1
 de ui,onion,,0,0
-de wortel,carrot,,0,0
+de wortel,carrot,,1,0
 de aardbei,strawberry,,0,0
 de druif,grape,,0,1
 de perzik,peach,,0,0
 de pruim,plum,,0,0
-de kers,cherry,,0,0
-de peer,pear,,1,0
+de kers,cherry,,0,1
+de peer,pear,,1,1
 de sinaasappel,orange,,0,0
 de mandarijn,mandarin,,0,0
 de kiwi,kiwi,,0,0
 de banaan,banana,,1,0
 bruikbar,useful,,0,0
 ik moet het bij de slager kopen,I have to buy it from the butcher,,0,1
-de buren komen morgen bij Hans eten,the neighbors will come tomorrow at Hans to eat,,0,0
+de buren komen morgen bij Hans eten,the neighbors will come tomorrow at Hans to eat,,0,1
 zeg het maar,tell me,,0,0
-het feit,fact,,0,0
-het konijn,rabbit,,0,0
+het feit,fact,,0,1
+het konijn,rabbit,,1,0
 de hoed,hat,,0,0
 het raam,window,,0,0
 tekenen,draw,,0,0
@@ -445,10 +445,10 @@ de golf,wave,pl. de golven,0,0
 gespannen,tense,,0,0
 vorig jaar,last year,,0,0
 (af)wachten,wait,,1,0
-op speciale dagen,on special days,,0,0
+op speciale dagen,on special days,,0,1
 sturen,send,,0,1
 het snoepje,candy,,0,0
-bellen,call (by phone),,1,0
+bellen,call (by phone),,1,1
 het stukje,piece,een stukje taart,0,0
 straks,"later, in due time",,0,0
 het lawaai,noise,,0,0
@@ -456,10 +456,10 @@ knoeien,make a mess,baby's knoeien met eten,0,0
 terugbellen,call back,,0,0
 de serveerster,waitress,,1,0
 de tafel,table,,1,0
-het restaurant,restaurant,,0,0
+het restaurant,restaurant,,1,0
 gaan zitten,sit down,,1,0
 alleen,"only, just",,0,1
-het gevoel,feeling,,1,0
+het gevoel,feeling,,1,1
 uitdrukken,express,,0,0
 de twijfel,doubt,,0,0
 de zekerheid,certainty,,0,0
@@ -479,7 +479,7 @@ om de ober voor de service te bedanken,to thank the waiter for the service,,0,0
 de dankbaarheid,gratitude,,0,0
 voelen,feeling,,0,0
 de tegenstelling,opposition,,0,0
-de reden,reason,,0,0
+de reden,reason,,0,1
 verbinden,connect,,0,0
 schaatsen,ice skating,,0,0
 verkouden,catch a cold,,0,0
@@ -528,7 +528,7 @@ kopen,buy,,0,0
 de verkoopster,saleswoman,,0,0
 helpen,help,,0,0
 het meisje,girl,,0,0
-de jongen,boy,,0,0
+de jongen,boy,,1,0
 zoeken,"am looking, search",,1,0
 de spijkerbroek,jeans,,0,0
 de maat,size,,0,0
@@ -545,8 +545,8 @@ proberen,try on,ik probeer,0,0
 allebei,both,,1,0
 maar even,just,,0,0
 goed,good,"beter = better, het best = best",0,0
-de paskamer,changing room,,0,0
-wijd,wide,,0,0
+de paskamer,changing room,,1,0
+wijd,wide,,0,1
 eventueel,if necessary,,0,0
 ruilen,exchange,,0,0
 binnen,within,,0,0
@@ -568,7 +568,7 @@ lichtgroen,light green,,0,0
 effen,solid,,0,0
 geruit,checkered,,0,0
 gebloemd,flowered,,0,0
-gestreept,striped,,0,0
+gestreept,striped,,1,0
 de trui,jumper/pullover,,0,0
 de bloes,blouse,,1,0
 de rok,skirt,,0,0
@@ -577,7 +577,7 @@ de schoenen,shoes,,0,0
 het pak,suit,,0,0
 behouden,"keep, maintain",behield/behielden - behouden,0,0
 bekijken,watch,bekeek/bekeken - bekeken,0,0
-beschrijven,describe,beschreef/beschreven - beschreven,0,0
+beschrijven,describe,beschreef/beschreven - beschreven,1,0
 besluiten,conclude,besloot/besloten - besloten,0,0
 bespreken,discuss,besprak/bespraken - besproken,0,0
 bestaan,exist,bestond/bestonden - bestaan,0,0
@@ -590,7 +590,7 @@ bewijzen,"prove, show, demonstrate",bewees/bewezen - bewezen,0,0
 bezitten,"own, possess",bezat/bezaten - bezeten,0,0
 bezoeken,visit (v),bezocht/bezochten - bezocht,0,0
 bidden,pray,bad/baden - gebeden,0,0
-binden,"tie, bind",bond/bonden - gebonden,0,0
+binden,"tie, bind",bond/bonden - gebonden,1,0
 blijken,"appear, prove",bleek/bleken - gebleken,0,0
 breken,break,brak/braken - gebroken,0,0
 brengen,bring,bracht/brachten - gebracht,0,0
