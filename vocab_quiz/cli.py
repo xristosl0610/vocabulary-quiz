@@ -1,5 +1,6 @@
 from argparse import ArgumentParser, Namespace
-from vocab_quiz.quiz import read_csv, quiz
+from vocab_quiz.quiz import read_csv, write_csv, quiz
+import pandas as pd
 
 
 def main() -> None:
@@ -14,8 +15,11 @@ def main() -> None:
 
     args: Namespace = parser.parse_args()
 
-    vocab_list = read_csv(args.csv_file)
-    quiz(vocab_list, args.num_words, args.direction)
+    vocab_df: pd.DataFrame = read_csv(args.csv_file)
+    quiz(vocab_df, args.num_words, args.direction)
+    write_csv(args.csv_file, vocab_df)
+
+    print("Vocabulary file updated successfully!")
 
 
 if __name__ == "__main__":
