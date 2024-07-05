@@ -66,13 +66,13 @@ def select_words(vocab_df: pd.DataFrame, num_words: int, direction: str) -> pd.D
     return vocab_df.loc[selected_indices]
 
 
-def quiz(vocab_df: pd.DataFrame, num_words: int = 10, direction: str = 'nl_en') -> None:
+def quiz(vocab_df: pd.DataFrame, num_words: int = 50, direction: str = 'nl_en') -> None:
     """
     Runs a quiz by selecting a specified number of random words from the vocabulary list.
 
     Args:
         vocab_df (pd.DataFrame): The DataFrame containing the vocabulary data.
-        num_words (int, optional): The number of words to include in the quiz. Defaults to 10.
+        num_words (int, optional): The number of words to include in the quiz. Defaults to 50.
         direction (str, optional): The direction of the quiz, 'nl_en' or 'en_nl'. Defaults to 'nl_en'.
     """
     selected_words: pd.DataFrame = select_words(vocab_df, num_words, direction)
@@ -91,7 +91,7 @@ def quiz(vocab_df: pd.DataFrame, num_words: int = 10, direction: str = 'nl_en') 
             raise ValueError(f"Unknown quiz direction: {direction}")
 
     for index, word in selected_words.iterrows():
-        print(f"\n{direction_title.split(' ')[0]} word: {word[prompt_col]}")
+        print(f"\n{index+1}. {direction_title.split(' ')[0]} word: {word[prompt_col]}")
         input("Your translation: ")
 
         print(f"\nCorrect translation: {word[translation_col]}")

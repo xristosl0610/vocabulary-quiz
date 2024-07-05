@@ -54,7 +54,7 @@ fiets,bike,vehicle,3,0
             self.assertEqual(self.vocab_df.at[0, 'Showed_nl_en'], 3)
             self.assertEqual(self.vocab_df.at[1, 'Showed_nl_en'], 0)
             mock_print.assert_has_calls([call('\n*** Dutch to English Quiz ***\n'),
-                                         call('\nDutch word: huis'),
+                                         call('\n1. Dutch word: huis'),
                                          call('\nCorrect translation: house'),
                                          call('Additional info: building\n'),
                                          call('Exiting the quiz...')])
