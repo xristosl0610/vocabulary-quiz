@@ -22,7 +22,7 @@ dweilen,mop,,0,0
 de vloer,floor,,0,0
 lezen,read,ik lees,0,1
 leren,learn,ik leer,1,0
-studeren,study,ik studeer,1,0
+studeren,study,ik studeer,2,0
 maakt een foto van het standbeeld,take a photo of the statue,,0,1
 het standbeeld,statue,,0,0
 het kind,child,,0,0
@@ -86,7 +86,7 @@ erg,very,,0,0
 thuis,"home, at home",ik ben morgen niet thuis,0,1
 het balkon,balcony,,0,1
 de helm,helmet,,2,0
-de ervaring,experience,,0,0
+de ervaring,experience,,0,1
 ik ben er geweest meer keer met vrinden,I have been there more times with friends,,1,0
 de gracht,canal,,1,0
 kamperen,camp,,0,0
@@ -128,7 +128,7 @@ net ,just,,0,0
 leven,live,,1,0
 dansen,dance,,0,0
 sporten,do sports,,0,0
-vieren,celebrate,,0,0
+vieren,celebrate,,1,0
 tanden poetsen,brush teeth,,2,0
 allemaal,everyone,,1,1
 de cursus,course,,1,0
@@ -154,7 +154,7 @@ maar,but,,0,1
 hier,here,,0,0
 al,already,,1,0
 het jaar,year,pl. de jaar,0,0
-verdergaan,continue,ik ga verder,1,0
+verdergaan,continue,ik ga verder,1,1
 iedereen,everyone,allemaal,2,1
 de bladzijde,page,,0,0
 stoppen,stop,,0,0
@@ -198,7 +198,7 @@ weer,again,het weer = weather,0,0
 het bezit,possession,,0,0
 januari,January,,0,0
 februari,February,,1,1
-maart,March,,0,0
+maart,March,,0,1
 april,April,,0,1
 mei,May,,1,0
 juni,June,,1,0
@@ -214,8 +214,8 @@ de zomer ,summer,,0,0
 de herfst,autumn,het najaar,1,0
 eerigisteren,the day before yesterday,,2,0
 overmorgen,the day after tomorrow,,0,1
-maandag,Monday,,0,0
-dinsdag,Tuesday,,0,0
+maandag,Monday,,0,1
+dinsdag,Tuesday,,1,0
 woensdag,Wednesday,,0,0
 donderdag,Thursday,,1,0
 vrijdag,Friday,,1,0
@@ -262,7 +262,7 @@ het verschil,difference,,1,1
 hij pakt melk uit de koeling,he takes milk from the fridge,,0,0
 de koeling,supermarket fridge,,0,0
 de koelkast,house fridge,de ijskast,0,0
-als het weer mooi is ,if the weather is nice,,0,0
+als het weer mooi is ,if the weather is nice,,1,0
 ik maak een BBQ bij een meer,I make a BBQ by a lake,,2,0
 soms,sometimes,,0,1
 vorige,previous,afgelopen,0,0
@@ -281,7 +281,7 @@ direct,"right now, immediately",,0,0
 iets,sth,,0,0
 afspreken,make an appointment,,0,0
 de afspraak,"date, appointment",,0,0
-de datum,date,,0,0
+de datum,date,,1,0
 dat lukt niet,that doesn't work,,1,0
 dan,then,,1,1
 blijf je ook eten?,will you stay also to eat?,,2,0
@@ -361,7 +361,7 @@ het gerecht,dish,,1,0
 de buitenlander,foreigner,,1,0
 de andijvie,endive,,0,0
 heerlijk,delicious,,2,0
-goedkoop,cheap,,0,0
+goedkoop,cheap,,0,1
 hoeveel,how much,,0,2
 nodig hebben,need,ik heb een tomaat nodig,0,0
 de persoon,person,,0,0
@@ -445,7 +445,7 @@ de golf,wave,pl. de golven,1,0
 gespannen,tense,,0,0
 vorig jaar,last year,,0,0
 (af)wachten,wait,,1,0
-op speciale dagen,on special days,,0,1
+op speciale dagen,on special days,,1,1
 sturen,send,,0,1
 het snoepje,candy,,0,0
 bellen,call (by phone),,1,1
@@ -458,7 +458,7 @@ de serveerster,waitress,,1,0
 de tafel,table,,1,0
 het restaurant,restaurant,,2,0
 gaan zitten,sit down,,1,0
-alleen,"only, just",,0,0
+alleen,"only, just",,0,1
 het gevoel,feeling,,1,1
 uitdrukken,express,,0,0
 de twijfel,doubt,,0,0
@@ -472,14 +472,14 @@ de toekomst,future,,0,0
 bedriegen,cheat,,0,0
 hoeven,"need, require","modal verb, e.g. Ik hoef niet te lopen",1,1
 mijn geld is op,run out of money,,0,0
-de maagpijn,stomachache,,0,0
+de maagpijn,stomachache,,1,0
 verfrissend,refreshing,,1,0
 gebeuren,happen,,0,0
 om de ober voor de service te bedanken,to thank the waiter for the service,,0,0
 de dankbaarheid,gratitude,,0,0
 voelen,feeling,,0,0
 de tegenstelling,opposition,,0,0
-de reden,reason,,0,1
+de reden,reason,,1,1
 verbinden,connect,,1,0
 schaatsen,ice skating,,1,0
 verkouden,catch a cold,,1,0
@@ -588,7 +588,7 @@ bevinden,"located in/at, ik bevind in een groot huis",bevond/bevonden - bevonden
 bewegen,move,bewoog/bewogen - bewogen,0,0
 bewijzen,"prove, show, demonstrate",bewees/bewezen - bewezen,0,0
 bezitten,"own, possess",bezat/bezaten - bezeten,0,0
-bezoeken,visit (v),bezocht/bezochten - bezocht,0,0
+bezoeken,visit (v),bezocht/bezochten - bezocht,1,0
 bidden,pray,bad/baden - gebeden,0,0
 binden,"tie, bind",bond/bonden - gebonden,2,0
 blijken,"appear, prove",bleek/bleken - gebleken,0,0
