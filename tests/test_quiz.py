@@ -45,6 +45,45 @@ fiets,bike,vehicle,3,0
         self.assertTrue('Dutch' in selected_words.columns)
         self.assertTrue('English' in selected_words.columns)
 
+    def test_importance_sampling(self):
+        extreme_csv_content = """Dutch,English,Additional Info,Showed_nl_en,Showed_en_nl
+woord1,word1,info1,100,0
+woord2,word2,info2,0,100
+woord3,word3,info3,0,0
+"""
+        vocab_df_extreme = pd.read_csv(StringIO(extreme_csv_content))
+
+        np.random.seed(0)
+        selected_words = select_words(vocab_df_extreme, 1, 'nl_en')
+
+        selected_dutch_word = selected_words.iloc[0]['Dutch']
+        self.assertIn(selected_dutch_word, ['woord2', 'woord3'])
+
+    def test_close_probabilities_sampling(self):
+        close_csv_content = """Dutch,English,Additional Info,Showed_nl_en,Showed_en_nl
+woord1,word1,info1,1,0
+woord2,word2,info2,3,0
+woord3,word3,info3,0,0
+"""
+        vocab_df_close = pd.read_csv(StringIO(close_csv_content))
+
+        np.random.seed(0)
+        selection_counts = {'woord1': 0, 'woord2': 0, 'woord3': 0}
+        num_trials = 1000
+
+        for _ in range(num_trials):
+            selected_words = select_words(vocab_df_close, 1, 'nl_en')
+            selected_dutch_word = selected_words.iloc[0]['Dutch']
+            selection_counts[selected_dutch_word] += 1
+
+        self.assertGreater(selection_counts['woord1'], selection_counts['woord2'])
+        self.assertGreater(selection_counts['woord3'], selection_counts['woord2'])
+
+        print('CSV info')
+        print({row['Dutch']: row['Showed_nl_en'] for _, row in vocab_df_close.iterrows()})
+        print('Sampling count')
+        print(selection_counts)
+
     @patch('builtins.input', side_effect=['house', 'y', 'q'])
     @patch('builtins.print')
     def test_quiz(self, mock_print, *args):
