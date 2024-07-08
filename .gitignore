@@ -151,3 +151,6 @@ __pypackages__/
 
 # Pyre
 .pyre/
+
+# Distributable version
+vocab_quiz/dist
