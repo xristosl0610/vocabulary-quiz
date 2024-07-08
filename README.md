@@ -62,6 +62,10 @@ To use the Vocabulary Quiz, follow these steps:
     ```bash
     run_vocab_quiz.bat
     ```
+   or using again a batch file you can add new words to the `csv` file
+   ```bash
+    add_words.bat
+    ```
 
 ## Project Structure
 Here’s an overview of the project structure:
@@ -73,6 +77,10 @@ vocab_quiz/<br>
 │ ├── quiz.py<br>
 │ ├── cli.py<br>
 │<br>
+├── bat/<br>
+│ ├── add_words.bat<br>
+│ ├── run_vocab_quiz.bat<br>
+│ └── short_quiz.bat<br>
 ├── data/<br>
 │ └── Dutch_Vocabulary.csv<br>
 │<br>
