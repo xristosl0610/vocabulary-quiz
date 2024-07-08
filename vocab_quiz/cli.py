@@ -1,51 +1,48 @@
 from argparse import ArgumentParser, Namespace
-from colorama import init, Fore, Style
-from vocab_quiz.quiz import read_csv, quiz, calculate_padding
+from vocab_quiz.quiz import read_csv, write_csv, add_word, quiz
+import pandas as pd
 
 
 def main() -> None:
     """
-    Main function that parses the command line arguments and starts the quiz.
+    Main function that parses the command line arguments and starts the quiz or adds a new word.
     """
-    init(autoreset=True)
-
     parser: ArgumentParser = ArgumentParser(description="Vocabulary Quiz")
     parser.add_argument("csv_file", help="Path to the CSV file containing vocabulary")
     parser.add_argument("--num_words", type=int, default=10, help="Number of words in the quiz")
-    parser.add_argument("--direction", choices=['nl_en', 'en_nl'], default='nl_en', help="Direction of the quiz")
+    parser.add_argument("--direction", type=str, choices=['nl_en', 'en_nl'],
+                        default='nl_en', help="Direction of the quiz")
+
+    parser.add_argument("--interactive", action="store_true", help="Interactive mode for adding new words")
 
     args: Namespace = parser.parse_args()
 
-    try:
-        vocab_list = read_csv(args.csv_file)
-    except FileNotFoundError:
-        print(f"{Fore.RED}Error:{Style.RESET_ALL} File '{args.csv_file}' not found. Please check the file path.")
-        return
-    except Exception as e:
-        print(f"{Fore.RED}Error:{Style.RESET_ALL} An error occurred while reading the CSV file: {str(e)}")
-        return
+    vocab_df: pd.DataFrame = read_csv(args.csv_file)
 
-    title: str = " Welcome to Vocabulary Quiz CLI "
-    padding: str = calculate_padding(title)
-    print(f"\n{padding}{len(title)*'='}"
-          f"\n{padding} Welcome to Vocabulary Quiz CLI "
-          f"\n{padding}{len(title)*'='}")
+    if args.interactive:
+        print("Welcome to the Vocabulary Quiz CLI")
+        print("Let's add some new words for future practice")
 
-    # print(f"\n{Fore.YELLOW}======================================="
-    #       f"\nWelcome to Vocabulary Quiz CLI"
-    #       f"\n=======================================\n{Style.RESET_ALL}")
+        while True:
+            dutch_word: str = input("Dutch word: ").strip()
+            english_word: str = input("English translation: ").strip()
+            additional_info: str = input("Additional Info: ").strip()
 
-    try:
-        quiz(vocab_list, args.num_words, args.direction)
-    except ValueError as ve:
-        print(f"{Fore.RED}Error:{Style.RESET_ALL} {str(ve)}")
-        return
-    except KeyboardInterrupt:
-        print("\nQuiz interrupted. Exiting...")
-        return
-    except Exception as e:
-        print(f"{Fore.RED}Error:{Style.RESET_ALL} An unexpected error occurred: {str(e)}")
-        return
+            if ((vocab_df['Dutch'] == dutch_word) | (vocab_df['English'] == english_word)).any():
+                print(f"The word '{dutch_word}' or its translation '{english_word}' already exists.")
+            else:
+                vocab_df: pd.DataFrame = add_word(vocab_df, dutch_word, english_word, additional_info)
+                print(f"{dutch_word} - {english_word} - {additional_info} -- has been added successfully")
+
+            more_words: str = input("More words to add? (y/n): ").strip().lower()
+            if more_words not in ['y', 'yes']:
+                break
+    else:
+        quiz(vocab_df, args.num_words, args.direction)
+
+    write_csv(args.csv_file, vocab_df)
+
+    print("Vocabulary file updated successfully!")
 
 
 if __name__ == "__main__":

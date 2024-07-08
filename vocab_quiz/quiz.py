@@ -1,25 +1,30 @@
-import csv
-import random
-from typing import List, Dict
-import shutil
-
-TERMINAL_WIDTH: int = shutil.get_terminal_size().columns
+import numpy as np
+import pandas as pd
 
 
-def read_csv(file_path: str) -> List[Dict[str, str]]:
+def read_csv(file_path: str) -> pd.DataFrame:
     """
-    Reads a CSV file and returns a list of dictionaries containing the vocabulary data.
+    Reads a CSV file and returns a DataFrame containing the vocabulary data.
 
     Args:
         file_path (str): The path to the CSV file.
 
     Returns:
-        List[Dict[str, str]]: A list of dictionaries where each dictionary represents a row in the CSV file.
+        pd.DataFrame: A DataFrame containing the vocabulary data.
     """
-    with open(file_path, newline='', encoding='utf-8') as csvfile:
-        reader: csv.DictReader = csv.DictReader(csvfile)
-        vocab_list: List[Dict[str, str]] = list(reader)
-    return vocab_list
+    vocab_df = pd.read_csv(file_path)
+    return vocab_df
+
+
+def write_csv(file_path: str, vocab_df: pd.DataFrame) -> None:
+    """
+    Writes the updated vocabulary data back to the CSV file.
+
+    Args:
+        file_path (str): The path to the CSV file.
+        vocab_df (pd.DataFrame): The DataFrame containing the updated vocabulary data.
+    """
+    vocab_df.to_csv(file_path, index=False)
 
 
 def format_direction_title(direction: str) -> str:
@@ -32,68 +37,111 @@ def format_direction_title(direction: str) -> str:
     Returns:
         str: The formatted direction title.
     """
-    if direction == 'nl_en':
-        return 'Dutch to English'
-    elif direction == 'en_nl':
-        return 'English to Dutch'
-    else:
-        raise ValueError(f"Unknown quiz direction: {direction}")
+    match direction:
+        case 'nl_en':
+            return 'Dutch to English'
+        case 'en_nl':
+            return 'English to Dutch'
+        case _:
+            raise ValueError(f"Unknown quiz direction: {direction}")
 
 
-def calculate_padding(text: str) -> str:
+def select_words(vocab_df: pd.DataFrame, num_words: int, direction: str) -> pd.DataFrame:
     """
-    Calculate padding to center text based on terminal width.
+    Selects words for the quiz based on inverse weighted probabilities, prioritizing words with
+    fewer appearances and fewer correct guesses.
 
     Args:
-        text (str): The text to center.
+        vocab_df (pd.DataFrame): The DataFrame containing the vocabulary data.
+        num_words (int): The number of words to include in the quiz.
+        direction (str): The direction code (e.g., 'nl_en' or 'en_nl').
 
     Returns:
-        str: Padding spaces to center the text.
+        pd.DataFrame: The selected words for the quiz.
     """
-    text_length: int = len(text)
-    padding_length: int = max(0, (TERMINAL_WIDTH - text_length) // 2)
-    return " " * padding_length
+    probabilities: pd.DataFrame = 1 / (vocab_df[f'Showed_{direction}'] + 1)
+    probabilities /= probabilities.sum()  # Normalize to sum to 1
+    selected_indices: np.ndarray = np.random.choice(vocab_df.index, size=num_words, replace=False, p=probabilities)
+
+    return vocab_df.loc[selected_indices]
 
 
-def quiz(vocab_list: List[Dict[str, str]], num_words: int = 10, direction: str = 'nl_en') -> None:
+def add_word(vocab_df: pd.DataFrame, dutch_word: str, english_word: str, additional_info: str) -> pd.DataFrame:
+    """
+    Adds a new word to the vocabulary DataFrame.
+
+    Args:
+        vocab_df (pd.DataFrame): The DataFrame containing the vocabulary data.
+        dutch_word (str): The Dutch word to add.
+        english_word (str): The English translation to add.
+        additional_info (str): Additional information about the word.
+
+    Returns:
+        pd.DataFrame: The updated DataFrame containing the new word.
+    """
+    if ((vocab_df['Dutch'] == dutch_word) | (vocab_df['English'] == english_word)).any():
+        print("Word already exists in the vocabulary.")
+        return vocab_df
+
+    new_row: pd.DataFrame = pd.DataFrame([{
+        'Dutch': dutch_word,
+        'English': english_word,
+        'Additional Info': additional_info,
+        'Showed_nl_en': 0,
+        'Showed_en_nl': 0
+    }])
+
+    updated_vocab_df: pd.DataFrame = pd.concat([vocab_df, new_row], ignore_index=True)
+    return updated_vocab_df
+
+
+def quiz(vocab_df: pd.DataFrame, num_words: int = 50, direction: str = 'nl_en') -> None:
     """
     Runs a quiz by selecting a specified number of random words from the vocabulary list.
 
     Args:
-        vocab_list (List[Dict[str, str]]): The list of vocabulary dictionaries.
-        num_words (int, optional): The number of words to include in the quiz. Defaults to 10.
+        vocab_df (pd.DataFrame): The DataFrame containing the vocabulary data.
+        num_words (int, optional): The number of words to include in the quiz. Defaults to 50.
         direction (str, optional): The direction of the quiz, 'nl_en' or 'en_nl'. Defaults to 'nl_en'.
     """
-    selected_words: List[Dict[str, str]] = random.sample(vocab_list, num_words)
+    selected_words: pd.DataFrame = select_words(vocab_df, num_words, direction)
+
     direction_title: str = format_direction_title(direction)
+    print(f"\n*** {direction_title} Quiz ***\n")
 
-    centered_title: str = f"*** {direction_title} Quiz ***"
-    padding: str = calculate_padding(centered_title)
-    print(f"\n{padding}{centered_title}\n")
-
-    for word in selected_words:
-        if direction == 'nl_en':
-            prompt_word: str = word['Dutch']
-            correct_translation: str = word['English']
-        elif direction == 'en_nl':
-            prompt_word: str = word['English']
-            correct_translation: str = word['Dutch']
-        else:
+    match direction:
+        case 'nl_en':
+            prompt_col: str = 'Dutch'
+            translation_col: str = 'English'
+        case 'en_nl':
+            prompt_col: str = 'English'
+            translation_col: str = 'Dutch'
+        case _:
             raise ValueError(f"Unknown quiz direction: {direction}")
 
-        additional_info: str = word['Additional Info']
+    word_idx: int = 1
+    for index, word in selected_words.iterrows():
+        print(f"\n{word_idx}. {direction_title.split(' ')[0]} word: {word[prompt_col]}")
+        input("Your translation: ")
 
-        temp_padding: str = calculate_padding(f"{direction_title.split(' ')[0]} word: {prompt_word}")
-        print(f"\n{temp_padding}{direction_title.split(' ')[0]} word: {prompt_word}")
-        input(f"{temp_padding}Your translation: ")
+        print(f"\nCorrect translation: {word[translation_col]}")
+        print(f"Additional info: {word['Additional Info']}\n")
 
-        temp_padding: str = calculate_padding(f"Correct translation: {correct_translation}")
-        print(f"\n{temp_padding}Correct translation: {correct_translation}")
-        print(f"{temp_padding}Additional info: {additional_info}\n")
+        while True:
+            correct = input("Was your answer correct? (y/n): ").strip().lower()
+            if correct in ('yes', 'y'):
+                vocab_df.at[index, f'Showed_{direction}'] += 1
+                break
+            elif correct in ('no', 'n'):
+                vocab_df.at[index, f'Showed_{direction}'] = max(0, vocab_df.at[index, f'Showed_{direction}'] - 1)
+                break
+            else:
+                print("Invalid response. Please type 'y' for yes or 'n' for no.")
 
-        temp_padding: str = calculate_padding("Press Enter for the next word or 'q' to exit...")
-        response: str = input(f"{temp_padding}Press Enter for the next word or 'q' to exit...")
+        word_idx += 1
+
+        response: str = input("\nPress Enter for the next word or 'q' to exit...")
 
         if response.lower() == "q":
-            print(f"{padding}Exiting the quiz...")
+            print("Exiting the quiz...")
             return
