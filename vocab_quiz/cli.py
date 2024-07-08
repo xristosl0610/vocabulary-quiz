@@ -5,7 +5,7 @@ import pandas as pd
 
 def main() -> None:
     """
-    Main function that parses the command line arguments and starts the quiz.
+    Main function that parses the command line arguments and starts the quiz or adds a new word.
     """
     parser: ArgumentParser = ArgumentParser(description="Vocabulary Quiz")
     parser.add_argument("csv_file", help="Path to the CSV file containing vocabulary")
@@ -24,17 +24,17 @@ def main() -> None:
         print("Let's add some new words for future practice")
 
         while True:
-            dutch_word = input("Dutch word: ").strip()
-            english_word = input("English translation: ").strip()
-            additional_info = input("Additional Info: ").strip()
+            dutch_word: str = input("Dutch word: ").strip()
+            english_word: str = input("English translation: ").strip()
+            additional_info: str = input("Additional Info: ").strip()
 
             if ((vocab_df['Dutch'] == dutch_word) | (vocab_df['English'] == english_word)).any():
                 print(f"The word '{dutch_word}' or its translation '{english_word}' already exists.")
             else:
-                vocab_df = add_word(vocab_df, dutch_word, english_word, additional_info)
+                vocab_df: pd.DataFrame = add_word(vocab_df, dutch_word, english_word, additional_info)
                 print(f"{dutch_word} - {english_word} - {additional_info} -- has been added successfully")
 
-            more_words = input("More words to add? (y/n): ").strip().lower()
+            more_words: str = input("More words to add? (y/n): ").strip().lower()
             if more_words not in ['y', 'yes']:
                 break
     else:
