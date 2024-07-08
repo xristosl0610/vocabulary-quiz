@@ -66,6 +66,35 @@ def select_words(vocab_df: pd.DataFrame, num_words: int, direction: str) -> pd.D
     return vocab_df.loc[selected_indices]
 
 
+def add_word(vocab_df: pd.DataFrame, dutch_word: str, english_word: str, additional_info: str) -> pd.DataFrame:
+    """
+    Adds a new word to the vocabulary DataFrame.
+
+    Args:
+        vocab_df (pd.DataFrame): The DataFrame containing the vocabulary data.
+        dutch_word (str): The Dutch word to add.
+        english_word (str): The English translation to add.
+        additional_info (str): Additional information about the word.
+
+    Returns:
+        pd.DataFrame: The updated DataFrame containing the new word.
+    """
+    if ((vocab_df['Dutch'] == dutch_word) | (vocab_df['English'] == english_word)).any():
+        print("Word already exists in the vocabulary.")
+        return vocab_df
+
+    new_row: pd.DataFrame = pd.DataFrame([{
+        'Dutch': dutch_word,
+        'English': english_word,
+        'Additional Info': additional_info,
+        'Showed_nl_en': 0,
+        'Showed_en_nl': 0
+    }])
+
+    updated_vocab_df: pd.DataFrame = pd.concat([vocab_df, new_row], ignore_index=True)
+    return updated_vocab_df
+
+
 def quiz(vocab_df: pd.DataFrame, num_words: int = 50, direction: str = 'nl_en') -> None:
     """
     Runs a quiz by selecting a specified number of random words from the vocabulary list.
