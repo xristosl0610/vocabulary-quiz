@@ -106,7 +106,7 @@ verschilende,various,,0,1
 we gaan naar de kroeg,we go to various pubs,,1,0
 indrukwekkend,impressive,,0,0
 oostelijk,eastern,,0,0
-het weer,weather,,0,0
+het weer,weather,,0,1
 kaal,bald,,1,1
 de herinnering,memory,,1,0
 wat doe je in je vrij tijd,what do you do in your free time,,0,0
@@ -284,7 +284,7 @@ de afspraak,"date, appointment",,0,0
 de datum,date,,0,0
 dat lukt niet,that doesn't work,,1,0
 dan,then,,1,1
-blijf je ook eten?,will you stay also to eat?,,1,0
+blijf je ook eten?,will you stay also to eat?,,2,0
 de agenda,agenda,,0,1
 hartstikke leuk,"terrific, fantastic",,0,0
 vind ik ook,I think so too,,0,0
