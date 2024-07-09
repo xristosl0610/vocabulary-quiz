@@ -34,8 +34,8 @@ def main() -> None:
                 vocab_df: pd.DataFrame = add_word(vocab_df, dutch_word, english_word, additional_info)
                 print(f"{dutch_word} - {english_word} - {additional_info} -- has been added successfully")
 
-            more_words: str = input("More words to add? (y/n): ").strip().lower()
-            if more_words not in ['y', 'yes']:
+            more_words: str = input("Continue? ").strip().lower()
+            if more_words in ('n', 'no', 'quit', 'q', 'exit'):
                 break
     else:
         quiz(vocab_df, args.num_words, args.direction)
