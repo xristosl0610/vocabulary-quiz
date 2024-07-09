@@ -120,7 +120,6 @@ def quiz(vocab_df: pd.DataFrame, num_words: int = 50, direction: str = 'nl_en') 
         case _:
             raise ValueError(f"Unknown quiz direction: {direction}")
 
-    word_idx: int = 1
     for word_idx, (index, word) in enumerate(selected_words.iterrows(), start=1):
         print(
             f"\n{word_idx}. {direction_title.split(' ', maxsplit=1)[0]} word: {word[prompt_col]}")
