@@ -8,12 +8,15 @@ def main() -> None:
     Main function that parses the command line arguments and starts the quiz or adds a new word.
     """
     parser: ArgumentParser = ArgumentParser(description="Vocabulary Quiz")
-    parser.add_argument("csv_file", help="Path to the CSV file containing vocabulary")
-    parser.add_argument("--num_words", type=int, default=10, help="Number of words in the quiz")
+    parser.add_argument(
+        "csv_file", help="Path to the CSV file containing vocabulary")
+    parser.add_argument("--num_words", type=int, default=10,
+                        help="Number of words in the quiz")
     parser.add_argument("--direction", type=str, choices=['nl_en', 'en_nl'],
                         default='nl_en', help="Direction of the quiz")
 
-    parser.add_argument("--interactive", action="store_true", help="Interactive mode for adding new words")
+    parser.add_argument("--interactive", action="store_true",
+                        help="Interactive mode for adding new words")
 
     args: Namespace = parser.parse_args()
 
@@ -29,13 +32,16 @@ def main() -> None:
             additional_info: str = input("Additional Info: ").strip()
 
             if ((vocab_df['Dutch'] == dutch_word) | (vocab_df['English'] == english_word)).any():
-                print(f"The word '{dutch_word}' or its translation '{english_word}' already exists.")
+                print(
+                    f"The word '{dutch_word}' or its translation '{english_word}' already exists.")
             else:
-                vocab_df: pd.DataFrame = add_word(vocab_df, dutch_word, english_word, additional_info)
-                print(f"{dutch_word} - {english_word} - {additional_info} -- has been added successfully")
+                vocab_df: pd.DataFrame = add_word(
+                    vocab_df, dutch_word, english_word, additional_info)
+                print(
+                    f"{dutch_word} - {english_word} - {additional_info} -- has been added successfully")
 
             more_words: str = input("Continue? ").strip().lower()
-            if more_words in ('n', 'no', 'quit', 'q', 'exit'):
+            if more_words in {'n', 'no', 'quit', 'q', 'exit'}:
                 break
     else:
         quiz(vocab_df, args.num_words, args.direction)
