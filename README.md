@@ -6,8 +6,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
 [![Issues](https://img.shields.io/github/issues/xristosl0610/vocabulary-quiz)](https://github.com/xristosl0610/vocabulary-quiz/issues)
 [![Pull Requests](https://img.shields.io/github/issues-pr/xristosl0610/vocabulary-quiz)](https://github.com/xristosl0610/vocabulary-quiz/pulls)
-
-
+[![Downloads](https://img.shields.io/badge/downloads-available-brightgreen)](https://github.com/xristosl0610/vocabulary-quiz/releases)
 
 </div>
 
