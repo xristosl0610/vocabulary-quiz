@@ -1,5 +1,16 @@
 # Vocabulary Quiz
 
+<div align="center" markdown="1">
+
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/xristosl0610/vocabulary-quiz/actions)
+[![License](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
+[![Issues](https://img.shields.io/github/issues/xristosl0610/vocabulary-quiz)](https://github.com/xristosl0610/vocabulary-quiz/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/xristosl0610/vocabulary-quiz)](https://github.com/xristosl0610/vocabulary-quiz/pulls)
+
+
+
+</div>
+
 Welcome to the Vocabulary Quiz! This project is a command-line interface (CLI) tool designed to help you practice Dutch vocabulary by translating words between Dutch and English.
 
 ## Table of Contents

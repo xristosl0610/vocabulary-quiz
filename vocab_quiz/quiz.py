@@ -12,8 +12,7 @@ def read_csv(file_path: str) -> pd.DataFrame:
     Returns:
         pd.DataFrame: A DataFrame containing the vocabulary data.
     """
-    vocab_df = pd.read_csv(file_path)
-    return vocab_df
+    return pd.read_csv(file_path)
 
 
 def write_csv(file_path: str, vocab_df: pd.DataFrame) -> None:
@@ -61,7 +60,8 @@ def select_words(vocab_df: pd.DataFrame, num_words: int, direction: str) -> pd.D
     """
     probabilities: pd.DataFrame = 1 / (vocab_df[f'Showed_{direction}'] + 1)
     probabilities /= probabilities.sum()  # Normalize to sum to 1
-    selected_indices: np.ndarray = np.random.choice(vocab_df.index, size=num_words, replace=False, p=probabilities)
+    selected_indices: np.ndarray = np.random.choice(
+        vocab_df.index, size=num_words, replace=False, p=probabilities)
 
     return vocab_df.loc[selected_indices]
 
@@ -91,7 +91,8 @@ def add_word(vocab_df: pd.DataFrame, dutch_word: str, english_word: str, additio
         'Showed_en_nl': 0
     }])
 
-    updated_vocab_df: pd.DataFrame = pd.concat([vocab_df, new_row], ignore_index=True)
+    updated_vocab_df: pd.DataFrame = pd.concat(
+        [vocab_df, new_row], ignore_index=True)
     return updated_vocab_df
 
 
@@ -119,9 +120,9 @@ def quiz(vocab_df: pd.DataFrame, num_words: int = 50, direction: str = 'nl_en') 
         case _:
             raise ValueError(f"Unknown quiz direction: {direction}")
 
-    word_idx: int = 1
-    for index, word in selected_words.iterrows():
-        print(f"\n{word_idx}. {direction_title.split(' ')[0]} word: {word[prompt_col]}")
+    for word_idx, (index, word) in enumerate(selected_words.iterrows(), start=1):
+        print(
+            f"\n{word_idx}. {direction_title.split(' ', maxsplit=1)[0]} word: {word[prompt_col]}")
         input("Your translation: ")
 
         print(f"\nCorrect translation: {word[translation_col]}")
@@ -132,15 +133,15 @@ def quiz(vocab_df: pd.DataFrame, num_words: int = 50, direction: str = 'nl_en') 
             if correct in ('yes', 'y'):
                 vocab_df.at[index, f'Showed_{direction}'] += 1
                 break
-            elif correct in ('no', 'n'):
-                vocab_df.at[index, f'Showed_{direction}'] = max(0, vocab_df.at[index, f'Showed_{direction}'] - 1)
+            if correct in ('no', 'n'):
+                vocab_df.at[index, f'Showed_{direction}'] = max(
+                    0, vocab_df.at[index, f'Showed_{direction}'] - 1)
                 break
-            else:
-                print("Invalid response. Please type 'y' for yes or 'n' for no.")
 
-        word_idx += 1
+            print("Invalid response. Please type 'y' for yes or 'n' for no.")
 
-        response: str = input("\nPress Enter for the next word or 'q' to exit...")
+        response: str = input(
+            "\nPress Enter for the next word or 'q' to exit...")
 
         if response.lower() == "q":
             print("Exiting the quiz...")
