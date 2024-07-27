@@ -38,7 +38,7 @@ ik ben negenentwintig jar oud,I am 29 years old,,1,0
 nieuw,new,nieuwe schoenen,1,0
 de familie,family,,2,2
 het cijfer,"grade, digit",,2,1
-de pen,pen,,2,1
+de pen,pen,,3,1
 rood,red,,2,0
 afhangen,depend,het hangt af van,3,1
 de koffie,coffee,,1,0
@@ -55,11 +55,11 @@ we zijn samen,we are together,,1,2
 het geld,money,,2,1
 gebruiken,use,,1,1
 anders,different,,0,1
-ik heb zin in,I feel like,Heb je zin in koffie?,1,0
+ik heb zin in,I feel like,Heb je zin in koffie?,2,0
 ik heb honger,I am hungry,,1,2
 de kinderen hebben dorst,the children are thirsty,,1,1
 heb je het koud of warm?,Are you cold or hot?,,1,1
-het geluid,sound,,1,0
+het geluid,sound,,1,1
 ik heb last van dat geluid,I am bothered by that sound,,1,1
 wanneer hebben jullie vakantie?,When are you on holiday,,1,1
 we hebben morgen geen les,we don't have a lesson tomorrow,,2,0
@@ -82,7 +82,7 @@ zwanger,pregnant,,0,2
 te laat,too late,,2,0
 het boek,book,,1,0
 het woordenboek,dictionary,,1,0
-erg,very,,1,1
+erg,very,,2,1
 thuis,"home, at home",ik ben morgen niet thuis,1,1
 het balkon,balcony,,1,2
 de helm,helmet,,2,0
@@ -108,10 +108,10 @@ indrukwekkend,impressive,,0,0
 oostelijk,eastern,,1,0
 het weer,weather,,1,2
 kaal,bald,,1,3
-de herinnering,memory,,2,0
+de herinnering,memory,,2,1
 wat doe je in je vrij tijd,what do you do in your free time,,2,0
 de boer,farmer,,1,0
-de buur,neighbor,,1,2
+de buur,neighbor,,2,2
 de oorbel,earring,,1,1
 vallen,fall,ik val,2,1
 de put,well,,3,1
@@ -142,7 +142,7 @@ wat,what,,1,1
 de voornaam,first name,,2,2
 de achternaam,surname,,1,0
 welk,which,,1,1
-de buurman,neighbor,,0,1
+de buurman,neighbor,,0,2
 hoe,how,,1,1
 heten,is called,ik heet,2,1
 hoe heet jij,what's your name,,3,0
@@ -155,7 +155,7 @@ hier,here,,0,2
 al,already,,2,1
 het jaar,year,pl. de jaar,1,2
 verdergaan,continue,ik ga verder,1,1
-iedereen,everyone,allemaal,3,1
+iedereen,everyone,allemaal,3,2
 de bladzijde,page,,1,1
 stoppen,stop,,0,1
 de pauze,break,,1,0
@@ -170,8 +170,8 @@ de kop,cup,het kopje,1,1
 al lang,for a long time,,0,1
 pas,only,,0,0
 eigenlijk,"actually, really",,2,1
-gisteren,yesterday,,1,1
-ik ben jarig,it's my birthday,,1,1
+gisteren,yesterday,,2,1
+ik ben jarig,it's my birthday,,2,1
 dus,therefore,,1,1
 krijgen,"get, receive",,1,3
 nog,any,,2,0
@@ -198,7 +198,7 @@ weer,again,het weer = weather,0,0
 het bezit,possession,,1,0
 januari,January,,1,1
 februari,February,,2,1
-maart,March,,0,2
+maart,March,,0,3
 april,April,,0,2
 mei,May,,2,2
 juni,June,,1,1
@@ -365,7 +365,7 @@ goedkoop,cheap,,1,1
 hoeveel,how much,,0,3
 nodig hebben,need,ik heb een tomaat nodig,2,1
 de persoon,person,,1,1
-ongeveer,"about, around",,2,1
+ongeveer,"about, around",,3,1
 de aardappel,potato,,1,0
 de slager,butcher,,1,3
 de bloemkool,cauliflower,,1,2
@@ -377,7 +377,7 @@ de knoflook,garlic,,0,1
 de komkommer,cucumber,,2,0
 genoeg,enough,,0,3
 waarnaaroe,where to,,0,0
-de euro,euro,,0,0
+de euro,euro,,0,1
 de cent,cent,,1,0
 geeft niet,doesn't matter,,3,0
 prettig,nice,,0,1
@@ -416,7 +416,7 @@ afsluiten,"terminate, conclude",sloot/sloten af - afgesloten,1,0
 bedenken,"invent, imagine",bedacht/bedachten - bedacht,0,1
 bedragen,sum (v),bedroeg/bedroegen - bedragen,0,1
 eigen,own,,1,0
-ik ben mijn jas kwijt,I lost my jacket,,0,1
+ik ben mijn jas kwijt,I lost my jacket,,1,1
 meenemen,bring,,2,0
 de sjaal,scarf,,1,2
 weggenlopen,run away,,0,0
@@ -434,7 +434,7 @@ grijs,gray,,2,0
 krom,crooked,,0,0
 zacht,soft,,1,1
 rond,round,,1,1
-blik,"tin, can",,0,2
+blik,"tin, can",,1,2
 het houd,timber,,0,1
 het vlees,meat,,2,2
 de fles,bottle,,1,0
@@ -500,7 +500,7 @@ de salade,salad,,1,2
 de kip,chicken,,3,2
 de rijst,rice,,1,0
 vegetarisch,vegetarian,,1,0
-de dagschotel,today's special,,1,1
+de dagschotel,today's special,,1,0
 kiezen,choose,,1,0
 eet smakelijk,bon appetit,,2,2
 het mes,knife,,1,0
@@ -541,7 +541,7 @@ licht,light,,1,0
 laag,low,,0,1
 verschillend(e),"different, various",,2,1
 het merk,brand,,1,0
-proberen,try on,ik probeer,1,0
+proberen,try on,ik probeer,1,1
 allebei,both,,5,1
 maar even,just,,1,2
 goed,good,"beter = better, het best = best",1,2
@@ -608,7 +608,7 @@ mezelf,myself,,0,1
 samenwonen,live together,,1,1
 bepaald,certain,een bepaald type woning = a particular type of house,0,0
 de woning,house,,0,0
-de bovenwoning,upstairs flat,,0,0
+de bovenwoning,upstairs flat,,0,1
 zien,see,,1,2
 het formulier,form,,1,1
 maximaal,maximum,maximale huurprijs,0,1
@@ -659,7 +659,7 @@ lekken,leak (v),het dak lekt,0,1
 ergens anders,somewhere else,,2,1
 de maaltijd,meal,,0,0
 het been,leg (for people),de benen,0,0
-de spullen,stuff,de dingen,0,0
+de spullen,stuff,de dingen,1,0
 verhuizen,move house,,1,2
 waarschuwen,warn (v),,1,0
 als zij een feestje willen geven,in case they want to throw a party,,0,0
