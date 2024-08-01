@@ -1,36 +1,36 @@
 Dutch,English,Additional Info,Showed_nl_en,Showed_en_nl
-de lucht,sky,,2,0
+de lucht,sky,,3,0
 het vliegtuig,plane,,3,1
 vliegen,fly,,1,1
 rijden op de fiets,ride the bike,,2,1
 met de hond lopen/wandelen,walk the dog,,4,2
-haar,her,,2,1
+haar,her,,3,1
 zwemmen,swim,ik zwem,0,1
 luisteren,listen,,2,2
 zorgen,care,,1,0
 vertellen,tell,ik vertel,1,1
 durven,dare,ik durf,1,1
-verliezen,lose,ik verlies,2,0
+verliezen,lose,ik verlies,3,0
 snijden,cut,ik snijd,1,0
-blijven,stay,ik blijf - bleef/bleven - gebleven,1,1
+blijven,stay,ik blijf - bleef/bleven - gebleven,2,1
 de sieraden,jewelry,,1,1
 nooit,never,,2,0
 altijd,always,,1,0
-de wedstrijd,match,,0,0
-vegen,sweep,ik veeg,0,0
+de wedstrijd,match,,1,0
+vegen,sweep,ik veeg,2,0
 dweilen,mop,,1,2
 de vloer,floor,,0,1
 lezen,read,ik lees,0,2
 leren,learn,ik leer,1,0
 studeren,study,ik studeer,2,1
 maakt een foto van het standbeeld,take a photo of the statue,,0,1
-het standbeeld,statue,,1,0
+het standbeeld,statue,,2,0
 het kind,child,,3,1
 rijden in de auto,driving in the car,,2,1
 dit huis,this house,die huizen,2,1
 de boom,tree,de bomen,1,0
 de boot,boat,de boten,1,2
-de boot vaart op het water,the boat sails on the water,,1,0
+de boot vaart op het water,the boat sails on the water,,2,0
 varen,"travel, sail (always on the water)",ik vaar,0,0
 ijs,ice,,1,1
 het ijsje,ice cream,,3,2
@@ -42,32 +42,32 @@ de pen,pen,,3,1
 rood,red,,2,0
 afhangen,depend,het hangt af van,3,1
 de koffie,coffee,,1,0
-de thee,tea,,1,0
+de thee,tea,,2,1
 we zijn klaar met de les,we are done with the lesson,,2,0
 ik ben klaar,I am ready,,0,1
-ziek,sick,,0,2
-de timmerman,carpenter,,1,0
+ziek,sick,,1,2
+de timmerman,carpenter,,2,0
 de vriend,friend,"de vriendin, e.g. we zijn goede vrienden",0,0
-geven,give,ik geef,0,1
-de vraag,question,de vragen,0,1
-het antwoord,reply,,2,0
+geven,give,ik geef,0,2
+de vraag,question,de vragen,0,2
+het antwoord,reply,,2,1
 we zijn samen,we are together,,1,2
-het geld,money,,2,1
-gebruiken,use,,1,1
+het geld,money,,2,2
+gebruiken,use,,1,2
 anders,different,,0,1
 ik heb zin in,I feel like,Heb je zin in koffie?,2,0
 ik heb honger,I am hungry,,1,2
-de kinderen hebben dorst,the children are thirsty,,1,1
-heb je het koud of warm?,Are you cold or hot?,,1,1
-het geluid,sound,,1,1
+de kinderen hebben dorst,the children are thirsty,,2,1
+heb je het koud of warm?,Are you cold or hot?,,2,1
+het geluid,sound,,2,0
 ik heb last van dat geluid,I am bothered by that sound,,1,1
 wanneer hebben jullie vakantie?,When are you on holiday,,1,1
 we hebben morgen geen les,we don't have a lesson tomorrow,,2,0
 morgen,tomorrow,,1,1
 vandaag,today,,2,1
-hij heeft pijn aan zijn arm,he has pain at his arm,,1,1
+hij heeft pijn aan zijn arm,he has pain at his arm,,2,1
 de pijn,pain,,1,0
-de hoofdpijn,headache,,0,1
+de hoofdpijn,headache,,1,1
 de griep,flu,ik heb griep,0,0
 de koorts,fever,ik heb koorts,1,1
 wij hebben vaak ruzie,we often argue,,1,1
@@ -77,14 +77,14 @@ de tuin,garden,,1,1
 mooi,beautiful,,2,1
 de jas,jacket,,1,1
 de winkel,store,,1,0
-de nicht,niece,,0,0
-zwanger,pregnant,,0,2
-te laat,too late,,2,0
-het boek,book,,1,0
+de nicht,niece,,0,1
+zwanger,pregnant,,0,3
+te laat,too late,,2,1
+het boek,book,,2,1
 het woordenboek,dictionary,,1,0
-erg,very,,2,1
-thuis,"home, at home",ik ben morgen niet thuis,1,1
-het balkon,balcony,,1,2
+erg,very,,1,1
+thuis,"home, at home",ik ben morgen niet thuis,2,1
+het balkon,balcony,,1,3
 de helm,helmet,,2,0
 de ervaring,experience,,2,2
 ik ben er geweest meer keer met vrinden,I have been there more times with friends,,2,0
@@ -102,27 +102,27 @@ genieten van,enjoy,,1,0
 ontspannen weekend,relaxed weekend,,1,0
 daarna ben ik terug gekomen,then I came back,,2,1
 ik ben op het strand geweest,I was at the beach,,2,0
-verschilende,various,,0,2
-we gaan naar de kroeg,we go to various pubs,,2,1
-indrukwekkend,impressive,,0,0
+verschilende,various,,0,3
+we gaan naar de kroeg,we go to various pubs,,3,2
+indrukwekkend,impressive,,1,0
 oostelijk,eastern,,1,0
 het weer,weather,,1,2
-kaal,bald,,1,3
-de herinnering,memory,,2,1
+kaal,bald,,2,3
+de herinnering,memory,,2,0
 wat doe je in je vrij tijd,what do you do in your free time,,2,0
 de boer,farmer,,1,0
 de buur,neighbor,,2,2
 de oorbel,earring,,1,1
 vallen,fall,ik val,2,1
 de put,well,,3,1
-we stoppen even,we stop for a little while,,0,1
+we stoppen even,we stop for a little while,,1,1
 komen op bezoek,pay a visit,,0,2
 de bril,glasses,,1,2
 ermitzien,to look / the way you look,,0,0
 de afdeling,department,,2,1
 knippen,cut w scissors,,0,2
 gooien,throw,,1,0
-halen,"catch, fetch",,0,2
+halen,"catch, fetch",,1,2
 Ik heb de bus net gehaald,I just caught the bus,,2,0
 net ,just,,1,0
 leven,live,,2,1
@@ -132,34 +132,34 @@ vieren,celebrate,,1,0
 tanden poetsen,brush teeth,,3,1
 allemaal,everyone,,1,1
 de cursus,course,,2,1
-andere,other,,0,1
+andere,other,,1,1
 lesgeven,teach,ik geef les,1,2
 de dag,day,,2,1
 beginnen,begin,begon/begonnen - begonnen,1,1
-kennismaken,get to know,,1,0
+kennismaken,get to know,,1,1
 wie,who,,1,1
 wat,what,,1,1
 de voornaam,first name,,2,2
 de achternaam,surname,,1,0
 welk,which,,1,1
-de buurman,neighbor,,0,2
+de buurman,neighbor,,1,2
 hoe,how,,1,1
 heten,is called,ik heet,2,1
 hoe heet jij,what's your name,,3,0
-waar,where,,1,1
-het adres,address,,3,0
+waar,where,,2,1
+het adres,address,,3,1
 het nummer,number,,0,0
 zeggen,say,,0,1
 maar,but,,0,1
-hier,here,,0,2
+hier,here,,0,3
 al,already,,2,1
-het jaar,year,pl. de jaar,1,2
+het jaar,year,pl. de jaar,1,4
 verdergaan,continue,ik ga verder,1,1
 iedereen,everyone,allemaal,3,2
 de bladzijde,page,,1,1
 stoppen,stop,,0,1
 de pauze,break,,1,0
-de tekst,text,,1,0
+de tekst,text,,1,1
 even,for a moment,,1,0
 kun je dat spellen?,can you spell that?,,2,1
 hoe spel je dat?,how do you spell that?,,1,2
@@ -170,24 +170,24 @@ de kop,cup,het kopje,1,1
 al lang,for a long time,,0,1
 pas,only,,0,0
 eigenlijk,"actually, really",,2,1
-gisteren,yesterday,,2,1
-ik ben jarig,it's my birthday,,2,1
-dus,therefore,,1,1
+gisteren,yesterday,,2,3
+ik ben jarig,it's my birthday,,1,1
+dus,therefore,,2,1
 krijgen,"get, receive",,1,3
 nog,any,,2,0
 het bezoek,visit,,2,1
 de broer,brother,,1,1
 wel,certainly,,0,0
 lang,tall,,1,1
-nog meer,anymore,,1,1
+nog meer,anymore,,1,2
 kijken,look,kijken naar,1,1
 het haar,hair,,0,0
-heel,very,,2,0
+heel,very,,2,1
 donker,dark,,1,2
 op dit moment,at this time,,2,0
-doen,do ,,2,0
-daar,there,,2,0
-op vakantie,on vacation,,2,1
+doen,do ,,3,0
+daar,there,,2,1
+op vakantie,on vacation,,4,1
 het seizoen,season,,1,0
 het werk,work,,2,0
 wanneer,when,,3,2
@@ -199,10 +199,10 @@ het bezit,possession,,1,0
 januari,January,,1,1
 februari,February,,2,1
 maart,March,,0,3
-april,April,,0,2
+april,April,,0,3
 mei,May,,2,2
-juni,June,,1,1
-juli,July,,1,1
+juni,June,,2,1
+juli,July,,1,3
 augustus,August,,1,0
 september,September,,2,1
 oktober,October,,1,2
@@ -212,24 +212,24 @@ de winter,winter,,1,1
 de lente,spring,het voorjaar,1,0
 de zomer ,summer,,2,2
 de herfst,autumn,het najaar,1,0
-eerigisteren,the day before yesterday,,2,2
+eerigisteren,the day before yesterday,,3,2
 overmorgen,the day after tomorrow,,1,2
 maandag,Monday,,1,3
 dinsdag,Tuesday,,3,0
-woensdag,Wednesday,,0,0
+woensdag,Wednesday,,1,1
 donderdag,Thursday,,1,0
 vrijdag,Friday,,1,1
 zaterdag,Saturday,,1,1
 zondag,Sunday,,1,0
 samen,together,,1,1
-prettig met je kennis te maken,nice to meet you,,3,2
+prettig met je kennis te maken,nice to meet you,,3,3
 kennen,know (people),,1,3
 ik wil graag cola,I would like a cola,,1,0
 nemen,take,ik neem,2,2
-roepen,call,ik roep de ober,1,0
+roepen,call,ik roep de ober,1,1
 de ober,waiter,,1,0
-bestellen,order,,2,0
-mogen,may,ik mag,1,1
+bestellen,order,,2,1
+mogen,may,ik mag,3,2
 zulen,shall,ik zal,0,0
 nog een keer,once more,,0,2
 betalen,pay ,ik betaal,2,0
@@ -239,7 +239,7 @@ we willen een tweede rondje bestellen,we want to order a second round,,2,1
 mag ik afrekenen?,may I pay?,,1,0
 moe,tired,,2,1
 zwaar,heavy,een zwaar weekend,3,1
-het meer,lake,,1,1
+het meer,lake,,2,1
 muziek spelen,play music,,3,0
 de muziek,music,,0,1
 geleden,ago,,1,1
@@ -248,14 +248,14 @@ ik vraag de ober of zij cola hebben,I ask the waiter if they have cola,,2,0
 als,"if/whether, like, as",,0,0
 wat een leuk idee,what a nice idea,,1,0
 ik ben bij de bakker,I am at the bakery,,0,2
-de bakker,"baker, bakery",,1,1
-Ik maak de vloer schoon,I clean the floor,,1,1
+de bakker,"baker, bakery",,2,1
+Ik maak de vloer schoon,I clean the floor,,1,2
 het meel,flour,,1,0
 het ei,egg,de eieren,2,0
 de bon (of de kassabon),receipt (at the supermarket),,2,0
 hij zoekt de boodschappen op zijn lijstje,he searches the groceries in his list,,2,0
 vallen op de grond,fall on the ground,,1,1
-de portemonnee,wallet,,2,0
+de portemonnee,wallet,,2,1
 zij kijkt naar iets in haar portemonnee,she looks at sth in her waller,,1,0
 pakken,take,,1,1
 het verschil,difference,,1,1
@@ -264,8 +264,8 @@ de koeling,supermarket fridge,,1,0
 de koelkast,house fridge,de ijskast,1,0
 als het weer mooi is ,if the weather is nice,,2,2
 ik maak een BBQ bij een meer,I make a BBQ by a lake,,2,1
-soms,sometimes,,2,1
-vorige,previous,afgelopen,1,1
+soms,sometimes,,3,1
+vorige,previous,afgelopen,2,1
 wil je meedoen?,do you want to join?,,1,0
 elkaar ontmoeten,meet each other,,0,1
 prima voor mij,fine for me,,0,0
@@ -277,35 +277,35 @@ belangrijk,important,,2,1
 een par dagen,a few days,,0,1
 prachtig,"fine, splendid",,2,0
 romantisch,romantic,,2,2
-direct,"right now, immediately",,0,0
+direct,"right now, immediately",,0,1
 iets,sth,,0,2
-afspreken,make an appointment,,1,2
+afspreken,make an appointment,,1,1
 de afspraak,"date, appointment",,1,1
-de datum,date,,1,0
+de datum,date,,2,0
 dat lukt niet,that doesn't work,,2,0
 dan,then,,1,1
 blijf je ook eten?,will you stay also to eat?,,3,1
 de agenda,agenda,,3,1
 hartstikke leuk,"terrific, fantastic",,0,0
 vind ik ook,I think so too,,1,0
-gauw,quickly,,1,1
+gauw,quickly,,0,1
 wensen,wish,,0,1
 ik moet ervandoor,Ihave to go,,1,1
 ervandoor gaan,"leave, go away",,2,0
 ervandoor ,away,,1,0
-doe de groeten aan,give my regards to ,,0,0
+doe de groeten aan,give my regards to ,,1,0
 volgende,next,vorige = afgelopen = previous,0,1
 tot dan,until then,,1,1
 waar,TRUE,"niet waar = false, not true",2,1
 zullen we iets afspreken?,shall we plan sth / meet?,,2,1
-uitstekend,excellent,,3,0
+uitstekend,excellent,,3,1
 beantwoorden,reply (v),,1,1
-spoedig,quick,snel,1,1
+spoedig,quick,snel,2,1
 aanbieden,"offer, present",bood/boden aan - aangeboden,0,0
 aandoen,"turn on (the light), put on (clothes)",deed/deden aan - aangedaan,0,0
 aankijken,look at (a person),keek/keken aan - aangekeken,1,1
 opkijken,look up,keek/keken op - opgekeken,0,0
-aankomen,arrive,kwam/kwamen aan - aangekomen,1,1
+aankomen,arrive,kwam/kwamen aan - aangekomen,2,1
 aannemen,"assume, suppose",nam/namen aan - aangenomen,0,0
 aansluiten,connect,sloot/sloten aan - aangesloten,0,0
 aantrekken,attract,trok/trokken aan - aangetrokken,1,0
@@ -314,39 +314,39 @@ aanwijzen,"indicate, point at",wees/wezen aan - aangewezen,1,1
 aanzien,take some time to look at,zag/zagen aan - aangezien,0,0
 begrijpen,understand,begreep/begrepen - begrepen,0,1
 het varken,pig,,2,2
-de paraplu,umbella,pl. paraplu's,1,0
-let op,beware of,,3,0
+de paraplu,umbella,pl. paraplu's,1,1
+let op,beware of,,4,1
 als haringen in een ton zitten,packed like sardines,,1,1
 de ton,barrel,,1,0
 het bot,bone,pl. de botten,2,0
-de duim,thumb,pl. de duimen,0,0
+de duim,thumb,pl. de duimen,0,1
 de nagel,nail,pl. de nagels,0,0
-de regel,rule,pl. de regels,1,1
+de regel,rule,pl. de regels,2,1
 de appel,apple,pl. de appels,2,0
 de toren,tower,pl. de torens,1,2
 het bord,"plate, traffic sign",,1,3
 de schepen varen op de zee,the ships sail on the sea,,1,1
 de verkoper,salesman,,1,2
 de doos,box,,0,0
-de verdieping,floor,,1,1
+de verdieping,floor,,1,2
 spannend,exciting,,0,0
-weleens,sometimes,soms,1,1
-het filmpje,film,"a ""p"" is added because it's difficult to say ""filmje""",1,2
-op straat,on the street,,0,1
+weleens,sometimes,soms,2,1
+het filmpje,film,"a ""p"" is added because it's difficult to say ""filmje""",2,2
+op straat,on the street,,2,1
 de klant,client,,0,1
 op tafel,on the table,,3,1
 de vergadering,meeting,,1,2
 de baas,boss,,1,0
-voorlezen,read out loud,,2,1
+voorlezen,read out loud,,2,2
 sinds vier jaar,since four years,,0,2
 de golf,wave,pl. de golven,1,2
 intussen,in the meantime,alvast,0,0
-boodschappen doen,go shopping,,1,0
-de markt,market,,1,0
+boodschappen doen,go shopping,,2,0
+de markt,market,,1,2
 de groenteboer,greengrocer,,1,0
 er,there,,2,1
 wie is er aan de beurt?,who's next?,,1,0
-de beurt,turn,,1,1
+de beurt,turn (n),,1,0
 alsjeblieft,please,,0,1
 klein,small,kleiner = smaller - kleinste = smallest,1,0
 geel,yellow,,0,1
@@ -355,8 +355,8 @@ de paprika,bell pepper,,2,1
 mooi,nice,,0,0
 de tomaat,tomato,,1,1
 natuurlijk,of course,,3,0
-anders/verder nog iets?,anything else?,,1,1
-typisch,typical,,2,1
+anders/verder nog iets?,anything else?,,1,0
+typisch,typical,,2,2
 het gerecht,dish,,2,1
 de buitenlander,foreigner,,1,1
 de andijvie,endive,,1,1
@@ -369,24 +369,24 @@ ongeveer,"about, around",,3,1
 de aardappel,potato,,1,0
 de slager,butcher,,1,3
 de bloemkool,cauliflower,,1,2
-de peterselie,parsley,,1,1
+de peterselie,parsley,,1,2
 het bosje,bunch,,3,0
 het boontje,bean,,1,0
 vers,fresh,,1,1
 de knoflook,garlic,,0,1
-de komkommer,cucumber,,2,0
+de komkommer,cucumber,,2,1
 genoeg,enough,,0,3
 waarnaaroe,where to,,0,0
-de euro,euro,,0,1
-de cent,cent,,1,0
+de euro,euro,,1,1
+de cent,cent,,2,1
 geeft niet,doesn't matter,,3,0
 prettig,nice,,0,1
-het weekend,weekend,,1,0
+het weekend,weekend,,2,0
 de sla ,lettuce,,1,0
 de broccoli,broccoli,,1,0
-de kool,cabbage,,1,1
+de kool,cabbage,,2,1
 de ui,onion,,2,1
-de wortel,carrot,,1,1
+de wortel,carrot,,1,2
 de aardbei,strawberry,,1,1
 de druif,grape,,1,1
 de perzik,peach,,0,1
@@ -395,20 +395,20 @@ de kers,cherry,,1,3
 de peer,pear,,1,2
 de sinaasappel,orange,,0,1
 de mandarijn,mandarin,,2,1
-de kiwi,kiwi,,0,1
+de kiwi,kiwi,,1,1
 de banaan,banana,,2,1
 bruikbar,useful,,3,1
 ik moet het bij de slager kopen,I have to buy it from the butcher,,1,1
 de buren komen morgen bij Hans eten,the neighbors will come tomorrow at Hans to eat,,1,2
 zeg het maar,tell me,,0,0
 het feit,fact,,1,0
-het konijn,rabbit,,3,1
+het konijn,rabbit,,4,1
 de hoed,hat,,0,0
-het raam,window,,1,1
+het raam,window,,3,1
 tekenen,draw,,0,1
 dragen,"carry, wear",,2,1
 roken,smoke,,1,0
-achterblijven,"remain, stay behind",bleef/bleven achter - achtergebleven,1,0
+achterblijven,"remain, stay behind",bleef/bleven achter - achtergebleven,2,0
 afkomen,get off (e.g. the ship),kwam/kwamen af - afgekomen,0,0
 aflopen,expire,liep/liepen af - afgelopen,2,1
 afnemen,decrease/decline,nam/namen af - afgenomen,0,0
@@ -416,18 +416,18 @@ afsluiten,"terminate, conclude",sloot/sloten af - afgesloten,1,0
 bedenken,"invent, imagine",bedacht/bedachten - bedacht,0,1
 bedragen,sum (v),bedroeg/bedroegen - bedragen,0,1
 eigen,own,,1,0
-ik ben mijn jas kwijt,I lost my jacket,,1,1
-meenemen,bring,,2,0
-de sjaal,scarf,,1,2
-weggenlopen,run away,,0,0
+ik ben mijn jas kwijt,I lost my jacket,,1,2
+meenemen,bring,,3,0
+de sjaal,scarf,,2,2
+weggenlopen,run away,,1,0
 boos,angry,,2,0
 lief,"sweet, kind",,2,0
-dun,skinny,,0,1
-doof,deaf,,1,0
+dun,skinny,,1,1
+doof,deaf,,1,1
 dik,fat,,1,1
 de leeuw,lion,,2,1
 de olifant,elephant,,1,1
-de zebra,zebra,,0,1
+de zebra,zebra,,0,2
 de beer,bear,,1,1
 smal,narrow,,1,1
 grijs,gray,,2,0
@@ -435,19 +435,19 @@ krom,crooked,,0,0
 zacht,soft,,1,1
 rond,round,,1,1
 blik,"tin, can",,1,2
-het houd,timber,,0,1
+het houd,timber,,1,0
 het vlees,meat,,2,2
 de fles,bottle,,1,0
-het overhemd,shirt,,1,1
+het overhemd,shirt,,1,2
 het gewicht,weight,,3,0
 de pap,porridge,,3,1
-de golf,wave,pl. de golven,2,0
+de golf,wave,pl. de golven,2,1
 gespannen,tense,,0,0
 vorig jaar,last year,,2,1
 (af)wachten,wait,,2,1
 op speciale dagen,on special days,,3,1
 sturen,send,,2,1
-het snoepje,candy,,0,0
+het snoepje,candy,,1,0
 bellen,call (by phone),,2,2
 het stukje,piece,een stukje taart,1,0
 straks,"later, in due time",,3,1
@@ -456,17 +456,17 @@ knoeien,make a mess,baby's knoeien met eten,1,1
 terugbellen,call back,,0,1
 de serveerster,waitress,,2,0
 de tafel,table,,3,1
-het restaurant,restaurant,,2,0
+het restaurant,restaurant,,3,0
 gaan zitten,sit down,,1,0
-alleen,"only, just",,1,1
+alleen,"only, just",,1,2
 het gevoel,feeling,,2,1
 uitdrukken,express,,0,0
 de twijfel,doubt,,0,0
-de zekerheid,certainty,,2,3
+de zekerheid,certainty,,2,2
 de wenselijkheid,desire,,0,0
 de mogelijkheid,possibility,,1,1
 de waarschijnlijkheid,probability,,2,0
-de wens,wish,,2,1
+de wens,wish,,3,1
 het bevel,"order, command",,1,0
 de toekomst,future,,1,2
 bedriegen,cheat,,0,0
@@ -474,15 +474,15 @@ hoeven,"need, require","modal verb, e.g. Ik hoef niet te lopen",1,2
 mijn geld is op,run out of money,,2,0
 de maagpijn,stomachache,,1,0
 verfrissend,refreshing,,1,0
-gebeuren,happen,,1,1
+gebeuren,happen,,1,2
 om de ober voor de service te bedanken,to thank the waiter for the service,,2,1
 de dankbaarheid,gratitude,,1,0
 voelen,feeling,,0,0
 de tegenstelling,opposition,,0,0
 de reden,reason,,2,1
 verbinden,connect,,1,1
-schaatsen,ice skating,,2,1
-verkouden,catch a cold,,1,0
+schaatsen,ice skating,,2,2
+verkouden,catch a cold,,1,1
 de kapper ,hairdresser,,1,3
 de dokter,doctor,,1,1
 de huisarts,general practicioner (GP),,0,2
@@ -493,38 +493,38 @@ het voorgerecht,starter,,0,0
 misschien,perhaps,,0,0
 het nagerecht,dessert,het toetje,2,0
 de mosterd,mustard,,2,0
-de soep ,soup,,2,1
-de biefstuk,steak,,1,0
-frietjes,chips,het frietje,1,2
-de salade,salad,,1,2
+de soep ,soup,,3,1
+de biefstuk,steak,,1,1
+frietjes,chips,het frietje,2,2
+de salade,salad,,2,3
 de kip,chicken,,3,2
-de rijst,rice,,1,0
-vegetarisch,vegetarian,,1,0
+de rijst,rice,,1,1
+vegetarisch,vegetarian,,2,0
 de dagschotel,today's special,,1,0
-kiezen,choose,,1,0
-eet smakelijk,bon appetit,,2,2
+kiezen,choose,,1,1
+eet smakelijk,bon appetit,,2,3
 het mes,knife,,1,0
 moeilijk,difficult,makkelijk = easy,1,2
 het gaat wel,it's okay,,1,1
-de soort,kind,,1,0
+de soort,kind,,1,1
 houden van ,like,ik houd van paella,1,1
 proeven,try,ik proef,0,0
-vet,"greasy, rich",,2,1
+vet,"greasy, rich",,3,1
 de chocola,chocolate,,2,1
 de slagroom,whipped cream,,1,3
-zonder,without,,1,1
+zonder,without,,1,2
 de rekening,bill,,1,0
 Laat de rest maar zitten,That's fine/Keep the change,,2,0
 laten,leave,,0,1
 de rest,the rest,,2,1
 de avond,evening,,0,1
 de lepel,spoon,,1,0
-de vork,fork,,1,2
+de vork,fork,,2,2
 de kleidingzaak,clothes shop,,0,0
 de kleiding,clothes,,0,0
 de zaak,shop/store,,0,0
-de broek,trousers,,1,1
-kopen,buy,,0,0
+de broek,trousers,,2,1
+kopen,buy,,1,0
 de verkoopster,saleswoman,,2,1
 helpen,help,,1,0
 het meisje,girl,,1,0
@@ -535,45 +535,45 @@ de maat,size,,0,0
 normaal,usually,,0,0
 groot,large,groter = larger,4,0
 de kleur,color,,0,0
-wat voor ,what kind of,,1,0
+wat voor ,what kind of,,2,1
 het model,style,,0,2
 licht,light,,1,0
 laag,low,,0,1
 verschillend(e),"different, various",,2,1
-het merk,brand,,1,0
+het merk,brand,,2,0
 proberen,try on,ik probeer,1,1
 allebei,both,,5,1
-maar even,just,,1,2
+maar even,just,,1,1
 goed,good,"beter = better, het best = best",1,2
-de paskamer,changing room,,1,2
+de paskamer,changing room,,2,2
 wijd,wide,,1,2
 eventueel,if necessary,,0,0
 ruilen,exchange,,0,0
-binnen,within,,2,1
+binnen,within,,2,0
 het T-shirt,T-shirt,,0,0
 liggen,(are) lie,,1,1
 allerlei,all kinds of,,1,1
-beslissen,decide,,0,0
-het staat me het best,it suits me best,,1,0
+beslissen,decide,,1,0
+het staat me het best,it suits me best,,2,1
 wit,white,,1,0
 zwart,black,,2,2
-blauw,blue,,1,1
+blauw,blue,,1,2
 groen,green,,1,1
 bruin,brown,,1,1
-paars,purple,,0,0
-roze,pink,,2,1
+paars,purple,,1,0
+roze,pink,,3,1
 oranje,orange,,1,1
 donkerblauw,dark blue,,1,1
 lichtgroen,light green,,1,0
 effen,solid,,0,0
 geruit,checkered,,0,0
-gebloemd,flowered,,2,0
-gestreept,striped,,2,0
+gebloemd,flowered,,3,0
+gestreept,striped,,3,0
 de trui,jumper/pullover,,0,1
 de bloes,blouse,,4,1
-de rok,skirt,,0,0
+de rok,skirt,,1,0
 de jurk,dress,,0,1
-de schoenen,shoes,,0,0
+de schoenen,shoes,,1,0
 het pak,suit,,0,0
 behouden,"keep, maintain",behield/behielden - behouden,0,0
 bekijken,watch,bekeek/bekeken - bekeken,0,1
@@ -593,18 +593,18 @@ bidden,pray,bad/baden - gebeden,0,0
 binden,"tie, bind",bond/bonden - gebonden,2,0
 blijken,"appear, prove",bleek/bleken - gebleken,0,0
 breken,break,brak/braken - gebroken,0,0
-brengen,bring,bracht/brachten - gebracht,1,0
+brengen,bring,bracht/brachten - gebracht,1,2
 buigen,"bend, bow",boog/bogen - gebogen,0,0
 lenen,"borrow, lend",,0,1
 de belofte,promise (n),,1,0
-plaatshebben,take place,,0,0
+plaatshebben,take place,,0,1
 de toestemming,"permission, consent",,1,0
 oppassen,watch out,,1,1
-lachen,laugh (v),,1,0
+lachen,laugh (v),,1,1
 de makelaar,real estate agent,,1,0
 de woonruimte,"accommodation, somewhere to live",,0,0
 de stad,"city, town",,0,0
-mezelf,myself,,0,1
+mezelf,myself,,1,1
 samenwonen,live together,,1,1
 bepaald,certain,een bepaald type woning = a particular type of house,0,0
 de woning,house,,0,0
@@ -614,65 +614,166 @@ het formulier,form,,1,1
 maximaal,maximum,maximale huurprijs,0,1
 de huurprijs,rent,,0,0
 huren,rent (v),,1,0
-oud,old,,0,1
+oud,old,,1,1
 de buurt,neighborhood,,2,0
 ver,far,,1,2
 dicht bij,close to,,1,1
-het park,park,,0,0
+het park,park,,1,0
 de woonkamer,living room,,0,1
 de vierkante meter,square meters,,2,0
 de meter,metre,,1,1
 open,open,,2,1
 de keuken,kitchen,,1,0
-ruim,spacious,,1,0
+ruim,spacious,,1,1
 het westen,west,,1,0
 de gang,passage (way),,1,0
 de wc,toilet,,0,0
 eenvoudig,simple,,0,0
 de badkamer,bathroom,,1,0
 de douche,shower,,1,1
-het bad,bath,,0,0
+het bad,bath,,1,0
 geschikt,suitable,,0,0
-want,because,,1,1
-gemeubileerd,furnished,,0,0
+want,because,"omdat, doordat",1,2
+gemeubileerd,furnished,,0,1
 de kast,cupboard,,0,0
-het bed,bed,,0,0
+het bed,bed,,2,0
 de stoel,chair,,0,0
 het bureau,desk,,1,0
 het voordeel,advantage,,2,0
 niets,nothing,,0,0
 zonnig,sunny,,1,1
-benedenwoning,ground-floor flat,,1,0
+benedenwoning,ground-floor flat,,1,1
 dat lijkt me fantastisch,that sounds great,,1,0
 zo snel mogelijk,as soon as possible,,1,0
-de begane grond,ground floor,,1,0
-de deur,door,,1,0
+de begane grond,ground floor,,2,1
+de deur,door,,1,1
 de garage,garage,,1,1
 het schuurtje,small shed,,0,1
 de bank,"couch, sofa",,1,0
-af en toe,once in a while,,0,0
-als het regent,when it rains,,1,1
+af en toe,once in a while,,1,0
+als het regent,when it rains,,2,2
 slagen,succeed,,0,0
 het bedrijf,company,,1,0
 het dak,roof,,2,0
 lekken,leak (v),het dak lekt,0,1
-ergens anders,somewhere else,,2,1
+ergens anders,somewhere else,,2,2
 de maaltijd,meal,,0,0
 het been,leg (for people),de benen,0,0
 de spullen,stuff,de dingen,1,0
-verhuizen,move house,,1,2
+verhuizen,move house,,2,2
 waarschuwen,warn (v),,1,0
 als zij een feestje willen geven,in case they want to throw a party,,0,0
 het ongeluk,accident,omdat er een ongeluk is gebeurt,0,0
 de kiespijn,toothache,,0,1
 blij,happy,,0,0
-sparen,save (money),,1,1
+sparen,save (money),,2,1
 juichen,cheer,,0,0
-de brommer,scooter,,0,0
+de brommer,scooter,,1,0
 het doelpunt,goal (in football),,1,0
-de notaris,notary,,0,0
+de notaris,notary,,1,0
 in het algemeen,in general,,1,0
 hoewel,despite,,0,0
 toevallig,by accident,,0,0
-verbieden,forbit,verbood/verboden - verboden,1,0
+verbieden,forbit,verbood/verboden - verboden,2,0
 Dat mag dan waar zijn,that may be true,,0,0
+het gevolg,"consequence, result",,0,0
+de oorzaak,cause,,1,0
+nadat,after,,0,0
+voordat,before,,0,1
+vriezen,freeze,vroor/vroren - gevroren,0,0
+overal,everywhere,,0,0
+zodat,so that,,0,0
+draaien,turn (v),,0,0
+de oefening,"training, exercise",,0,0
+de mest,"manure, fertilizer",,0,0
+strooien,"scatter, pour, sprinkle",,0,0
+de koffer,suitcase,,0,0
+inpakken,pack,,0,1
+het verpleegtehuis,nursing home,,0,0
+Ik krijg een mooi cijfer,I get a nice grade,,0,0
+de bestuurder,driver,,0,0
+de aanrijding,"collision, crash",,0,0
+aanbranden,"burn, stick to the pan",,0,0
+de brand,fire,,0,0
+de lucifer,matchstick,,0,0
+ontstaan,"arise, start",,1,0
+"Doordat de kinderen met lucifers speelden, is er brand ontstaan","Because the children played with matches, there was a fire",,0,0
+de vertraging,delay,,1,0
+slippen,slip (v),de auto slipt,0,1
+glad,"smooth, slippery",de weg was glad,0,1
+de weg,road,,0,0
+veroorzaken,cause (v),,0,0
+de huiseigenaar,home owner,,0,0
+Er zijn allerlei meubels bij de huurprijs inbegrepen,There are all sorts of furniture included in the rental price,,0,0
+huidig,current,,0,0
+delen,share (v),,0,0
+oosten,East,,0,0
+westen,West,,0,0
+noorden,North,,0,0
+Zuiden,South,,0,0
+de lift,elevator,,0,0
+even nummer,even number,oneven nummer - odd number,0,0
+de manier,"way, manner",,0,1
+het boek ligt op de tafel,the book lies on the table,,1,0
+tegen,against,,0,0
+onder,under,beneden,0,0
+de advertentie,advertisment,,0,0
+de zolder,attic,,0,0
+de Verenigde Staten,United States,,0,0
+wat is er aan de hand?,What's wrong?,,0,0
+zoals,as,,0,0
+I'm covered in lumps / a rash,,,0,0
+de arm,arm,,0,0
+de buik,stomach,,0,0
+de rug,back (n),,1,0
+het gezicht,face (n),,0,0
+jeuken,itch (v),,0,0
+verschrikkelijk,terrible,,0,0
+van alles,everything,,0,0
+gisteravond,last night,,0,0
+overdag,during the day,,0,0
+werken,work (v),,0,0
+de voetbalvereniging,football club,,0,0
+spelen,play (v),,0,0
+daarna,after that,,0,0
+drinken,drink (v),,1,0
+bijzonder,special,,0,0
+eten,eat (v),,0,0
+vergeten,forget,,1,0
+denken,think,,0,0
+rijp,ripe,,0,0
+de emmer,bucket,,0,0
+de klacht,complaint,,0,0
+lijken op,look like,,0,0
+allergisch,allergic,,0,0
+de reactie,reaction,,0,0
+reageren,react (v),,0,0
+de zalf,ointment,,0,0
+de jeuk,itch (n),,0,0
+krabben,scratch (v),,0,0
+de huid,skin,,0,0
+sterkte,"good luck, stay strong",,0,1
+het hoofd,head (n),,0,0
+de nek,neck,,0,0
+de schoulder,shoulder,,0,0
+de pols,wrist,,1,0
+de hand,hand (n),,0,0
+de vinger,finger (n),,0,0
+de knie,knee,,0,0
+de enkel,ankle,,0,0
+de voet,foot,,0,0
+de mond,mouth (n),het oog,0,0
+het oog,eye,,1,0
+de neus,nose,,0,0
+het oor,ear,,0,0
+Beterschap,Get well soon,,0,0
+Ik wens u het (aller)beste,I wish you all the best (for health),,0,0
+lusten,like (for food),,0,0
+getrouwd,married,,1,0
+langs,along,,0,0
+vast,fixed,,0,0
+bang,scared,Ik ben bang voor spinnen,0,0
+de spin,spider,de spinnen,0,0
+raden,guess (v),raden van,0,0
+geloven,believe,geloven in,0,0
+hopen,hope,hopen op,1,0
