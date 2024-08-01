@@ -1,11 +1,4 @@
 @echo off
-REM Get the directory of the batch file
-setlocal
-set "BASE_DIR=%~dp0"
-REM Your existing code here
-endlocal
-set "BASE_DIR=%~dp0"
-
 REM Change to the base directory
 cd /d "%~dp0.."
 
