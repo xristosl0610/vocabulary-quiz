@@ -1,0 +1,12 @@
+[project]
+name = "vocab_quiz"
+version = "0.1.0"
+description = "A fun way to study vocabulary, among Dutch and English"
+author='Christos Lathourakis'
+author_email='xristosl0610@gmail.com'
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.2.2",
+    "pandas>=2.2.3",
+]
