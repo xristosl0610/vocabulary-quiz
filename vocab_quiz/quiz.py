@@ -58,10 +58,19 @@ def select_words(vocab_df: pd.DataFrame, num_words: int, direction: str) -> pd.D
     Returns:
         pd.DataFrame: The selected words for the quiz.
     """
-    probabilities: pd.DataFrame = 1 / (vocab_df[f'Showed_{direction}'] + 1)
-    probabilities /= probabilities.sum()  # Normalize to sum to 1
-    selected_indices: np.ndarray = np.random.choice(
-        vocab_df.index, size=num_words, replace=False, p=probabilities)
+    vocab_df['probability'] = 1 / (vocab_df[f'Showed_{direction}'] + 1)
+
+    top_vocab: pd.DataFrame = vocab_df.nlargest(2 * num_words, 'probability', keep='all')
+
+    top_vocab['probability'] /= top_vocab['probability'].sum()
+
+    selected_indices: np.ndarray[int] = np.random.choice(
+        top_vocab.index,
+        size=num_words,
+        replace=False,
+        p=top_vocab['probability']
+    )
+    vocab_df.drop(columns='probability', inplace=True, errors='ignore')
 
     return vocab_df.loc[selected_indices]
 
